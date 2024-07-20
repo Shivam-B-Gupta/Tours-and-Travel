@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EAST INDIA</title>
+  <link rel="stylesheet" href="estern.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .nav__menu.active{
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+</style>
+
+<body>
+ 
+  <!DOCTYPE html>
+  <header class="header">
+    <nav class="nav container">
+       <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+             <i class="logo"></i> Explore2Go
+          </a>
+          
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line nav__burger"></i>
+             <i class="ri-close-line nav__close"></i>
+          </div>
+       </div>
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li><a href="index.html" class="nav__link">Home</a></li>
+
+             <li><a href="about.html" class="nav__link">About us</a></li>
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="Northindia.html" class="dropdown__link">
+                         <i class=""></i> North India
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="south.html" class="dropdown__link">
+                         <i class=""></i>  South India
+                      </a>
+                   </li>
+                   <li>
+                      <a href="estern.html" class="dropdown__link">
+                         <i class=""></i>  East India
+                      </a>
+                   </li>
+                   <li>
+                      <a href="west2.html" class="dropdown__link">
+                         <i class=""></i>  West India
+                      </a>
+                   </li>
+                </ul>
+             </li>
+             
+             <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+             
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="nearby.html" class="dropdown__link">
+                         <i class=""></i> Nearby Adventures
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="sunrise.html" class="dropdown__link">
+                         <i class=""></i> Sunrise Journeys
+                      </a>
+                   </li>
+
+                   <li>
+                      <a href="arabian.html" class="dropdown__link">
+                         <i class=""></i> Arabian Nights
+                      </a>
+                   </li>
+                   <li>
+                      <a href="euro.html" class="dropdown__link">
+                         <i class=""></i> Euro Wonders
+                      </a>
+                   </li>
+                </ul>
+             </li>
+
+             <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+          </ul>
+       </div>
+    </nav>
+ </header>
+
+
+                
+  <script type="text/javascript">
+
+    let menu = document.querySelectorAll('#burgericon');
+    let close = document.querySelectorAll('#close-icon');
+    let main = document.querySelectorAll('#nav-menu');
+
+    menu.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+
+    close.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+   
+
+
+
+
+
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+        MOST VISITED PLACE IN EAST</h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="Images/Buddha Gaya.jpg" alt="Buddha Gaya , Bihar">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Buddha Gaya , Bihar</h1>
+        <div class="main2">
+          Bodh Gaya is a Buddhist pilgrimage site in Gaya District of Bihar. Famous for the Mahabodhi Temple, It was here under the Bodhi tree that Gautama Buddha attained enlightenment.It is now one of the UNESCO World Heritage Sites, and a lot of foreign countries, including Japan and China, have helped the Indian government in building facilities for the Buddhist pilgrims.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">JAGGANATH MANDIR</h1>
+        <div class="main2">
+          The Jagannath Temple in Puri, Odisha, is a revered Hindu shrine dedicated to Lord Jagannath, an incarnation of Vishnu, with his siblings Balabhadra and Subhadra. Known for its massive 65-meter-tall spire and intricate architecture, the temple hosts the famous Rath Yatra festival, drawing millions of Vaishnavism followers worldwide.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="Images/Jagganath mandir.jpg" alt="JAGGANATH MANDIR">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="Images/Dasam Falls.jpg" alt="Dasam Falls">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Dasam Falls</h1>
+        <div class="main2">Dasam Falls, located in Karnataka, is a magnificent royal residence and a prime example of Indo-Saracenic architecture. Known for its grand facade, intricate interiors, and vibrant Durbar Hall, the palace is a symbol of the region's rich cultural heritage.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">RAJGIR</h1>
+        <div class="main2">
+          Rajgir is town where the air that surrounds its beautiful sceneries carries hints of spirituality and vibrant hues of history with links with both Buddhism and Jainism. Set in a green valley and surrounded by rocky hills, Rajgir is a spiritual town with natural serenity amongst the dense forests, mysterious caves and springs.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="Images/rajgir.jpg" alt="RAJGIR">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="Images/DARGILING1.webp" alt="DARGILING">
+      </div>
+      <div class="rightside">
+        <h1 class="main">DARGILING</h1>
+        <div class="main2">Darjeeling, a charming hill station in West Bengal, India, is renowned for its breathtaking views of the Himalayas, including Mount Kanchenjunga, and its lush tea plantations. Key attractions include the sunrise at Tiger Hill, rides on the historic Darjeeling Himalayan Railway ("Toy Train"), and visits to expansive tea estates. The Batasia Loop offers panoramic views, while the Padmaja Naidu Himalayan Zoological Park is home to rare animals like the red panda and snow leopard. Other highlights include the serene Japanese Peace Pagoda, the Himalayan Mountaineering Institute, and the Darjeeling Ropeway, which provides stunning aerial views. With its cool climate, vibrant local culture, and colonial-era charm, Darjeeling is a beloved destination for tourists seeking natural beauty and tranquility.
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">UDAYGIRI AND KHANDAGIRI CAVES</h1>
+        <div class="main2">The Udayagiri and Khandagiri Caves, located near Bhubaneswar in Odisha, India, are significant historical and archaeological sites dating back to the 2nd century BCE. These rock-cut caves were carved out during the reign of King Kharavela of the Kalinga dynasty and served as residential blocks for Jain monks. Udayagiri, meaning "Sunrise Hill," houses the famous Rani Gumpha (Queen's Cave) known for its intricate carvings and sculptures. Khandagiri, meaning "Broken Hill," features several caves with beautiful inscriptions and reliefs depicting Jain religious themes. These twin hills offer a fascinating glimpse into ancient Jain architecture and artistry, set against a backdrop of natural beauty and panoramic views of the surrounding landscape. 
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="Images/udayagiri and khandagiri caves.jpg" alt="UDAYGIRI AND KHANDAGIRI CAVES">
+      </div>
+    </div>
+    <div class="mini_container">
+
+        <div class="leftside">
+          <img src="Images/VICTORIA MEMORIAL.jpeg" alt="VICTORIA MEMORIAL">
+        </div>
+        <div class="rightside">
+          <h1 class="main">VICTORIA MEMORIAL</h1>
+          <div class="main2">The Victoria Memorial in Kolkata, West Bengal, is a grand marble edifice built in memory of Queen Victoria, showcasing British colonial architecture. This iconic landmark is surrounded by lush gardens and features an impressive museum housing a vast collection of artifacts, paintings, and manuscripts from the British era. Visitors can explore the majestic central dome, impressive statues, and galleries that depict the historical and cultural heritage of India. Illuminated at night, the Victoria Memorial offers a stunning visual spectacle, making it a must-visit destination for tourists seeking to experience Kolkata's rich history and architectural grandeur.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">KOLKATTA</h1>
+          <div class="main2">Kolkata, the capital of West Bengal, India, is a city steeped in rich cultural heritage and history, known for its colonial architecture, vibrant arts scene, and bustling markets. Key attractions include the majestic Victoria Memorial, the iconic Howrah Bridge, and the spiritual Dakshineswar Kali Temple. Visitors can explore the Indian Museum, one of the oldest in the country, and the Marble Palace with its impressive collection of antiques. The lively Park Street is famous for its dining and nightlife, while the serene Belur Math offers a spiritual retreat. Kolkata's unique charm is further highlighted by its literary festivals, traditional music and dance performances, and the grand celebration of Durga Puja, making it a captivating destination for tourists.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="Images/kolkatta.jpg" alt="KOLKATTA">
+        </div>
+      </div>
+   
+      
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">We believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="Maharashtra.html"><li>Services</li></a>
+                    <a href="contact.html" class="heading-link">
+                   <li>Contact</li>
+                  </a>
+                </ul>
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i>  Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fa-envelope"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+</footer>
+<script src="india.js"></script>
+</html>

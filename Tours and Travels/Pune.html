@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Pune, a vibrant city known for its rich cultural heritage and historical landmarks. Explore ancient forts, bustling markets, and serene temples. Enjoy Pune's dynamic blend of tradition and modernity, offering a unique travel experience.">
+  <title>Explore Pune: Cultural Hub and Historical Landmarks</title>
+  <link rel="stylesheet" href="Pune.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+</style>
+
+<body>
+ 
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo">
+                  <i class="logo"></i> Explore2Go
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
+
+                  <li><a href="about.html" class="nav__link">About us</a></li>
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="Northindia.html" class="dropdown__link">
+                              <i class=""></i> North India
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="south.html" class="dropdown__link">
+                              <i class=""></i>  South India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="estern.html" class="dropdown__link">
+                              <i class=""></i>  East India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="west2.html" class="dropdown__link">
+                              <i class=""></i>  West India
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+                  
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="nearby.html" class="dropdown__link">
+                              <i class=""></i> Nearby Adventures
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="sunrise.html" class="dropdown__link">
+                              <i class=""></i> Sunrise Journeys
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="arabian.html" class="dropdown__link">
+                              <i class=""></i> Arabian Nights
+                           </a>
+                        </li>
+                        <li>
+                           <a href="euro.html" class="dropdown__link">
+                              <i class=""></i> Euro Wonders
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+                
+  <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+        PUNE: HERITAGE, HILLS &amp; HARMONY </h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="images/shivneri.jpg" alt="Shivneri">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Shivneri</h1>
+        <div class="main2">
+          Shivneri Fort, located near Junnar in Pune district, Maharashtra, is an ancient military fortification and the birthplace of Chhatrapati Shivaji Maharaj, the founder of the Maratha Empire. Perched on a hilltop overlooking Junnar city, Shivneri Fort offers breathtaking views and a deep dive into India's rich history.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Shaniwar Wada</h1>
+        <div class="main2">
+          Shaniwar Wada is a historic site located in Pune, Maharashtra, and is one of the must-visit places in the city. Once the seat of the Peshwas of the Maratha Empire, this iconic structure was constructed in the 18th century and suffered significant damage from a fire in 1828. Despite its ruins, Shaniwar Wada remains a popular tourist attraction, drawing visitors with its rich history and cultural significance.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/shaniwarwada.jpg" alt="Shaniwar Wada">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="images/dagduseth.jpg" alt="Dagduseth Halwai Ganpati Temple">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Dagduseth Halwai Ganpati Temple</h1>
+        <div class="main2">Dagdusheth Ganpati Temple, located in Pune, is an iconic shrine dedicated to Lord Ganesh. Renowned for its exquisite architecture and vibrant celebrations, this temple draws thousands of devotees and visitors each year. Experience the rich cultural heritage and spiritual atmosphere as you immerse yourself in the festivities and traditions surrounding this beloved landmark.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">Sinhagad Fort</h1>
+        <div class="main2">
+          Sinhagad Fort, a historic monument of great importance in Maratha history, was originally named Kondhana Fort. Located atop a rugged hill at an elevation of approximately 1,300 meters, this fort has been the site of many battles and has changed hands multiple times over the centuries. Explore the rich history and significance of Sinhagad Fort as you take in its breathtaking views and heritage.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/sinhagad.jpg" alt="Sinhagad Fort">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="images/harishchandragad.jpg" alt="Harishchandragad">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Harishchandragad</h1>
+        <div class="main2">Harishchandragad, situated in the stunning Sahyadri mountains of Maharashtra, India, is a magnificent ancient hill fort that showcases the beauty of history and nature. Towering at an elevation of 4,670 feet, this fort has been a favorite among adventurers and history enthusiasts for centuries.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Lonaval/Khandala</h1>
+        <div class="main2">Lonavla and the neighboring Khandala are picturesque twin hill stations located 622 meters (2,041 ft) above sea level in the Sahyadri ranges, which separate the Deccan Plateau from the Konkan coast. Tourism peaks during the monsoon season, attracting visitors to their scenic beauty. The name 'Lonavla' comes from the Sanskrit word 'lonavli,' which refers to the many caves nearby, including the Karla, Bhaja, and Bedsa Caves.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/lonavala.jpg" alt="Lonaval/Khandala">
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Okayama Friendship Garden</h1>
+          <div class="main2">
+            The Pune-Okayama Friendship Garden, inspired by the historic Kōraku-en Garden in Okayama, serves as a serene oasis in Pune. The garden features naturally flowing water from a canal, which enhances its tranquil ambiance. It is meticulously maintained, and visitors are kindly asked not to walk on the lawn.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/okayama.jpg" alt="Okayama Friendship Garden">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/saras.jpg" alt="Saras Baug">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Saras Baug</h1>
+          <div class="main2">Saras Baug is a prominent tourist attraction in Pune, India, featuring a sprawling garden that covers around 25 acres. This lush space offers a serene environment filled with vibrant greenery. The garden is named after the 'Sarus' cranes frequently seen in the area and is a favorite destination for both visitors and local residents.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Katraj Jain Temple</h1>
+          <div class="main2">
+            Katraj Jain Temple is a notable place of worship that embodies peace and tranquility. Situated on a hillock between the Pune-Satara highway in Katraj, Pune district, Maharashtra, this temple offers a serene environment for reflection and devotion.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/katraj.jpg" alt="Katraj Jain Temple">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/aga-khan.webp" alt="Aga Khan Palace">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Aga Khan Palace</h1>
+          <div class="main2">The Aga Khan Palace in Pune stands as a national monument significant to India's freedom struggle. During the Quit India Movement of 1942, Mahatma Gandhi, along with his wife Kasturba and secretary Mahadevbhai Desai, was imprisoned at the palace from August 9, 1942, to May 6, 1944. This historic site serves as a reminder of India's fight for independence. </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Kalsubai Peak</h1>
+          <div class="main2">
+            
+Kalsubai is the tallest peak in Maharashtra's Western Ghats and a sought-after trekking destination. Located in the Sahyadri mountain range, it attracts adventure enthusiasts eager to explore its scenic trails. Trekking to Kalsubai offers an exhilarating experience amidst breathtaking lan</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/kalsubai.jpg" alt="Kalsubai Peak">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/rajmachi.jpg" alt="Raj Machi Fort">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Raj Machi Fort</h1>
+          <div class="main2">Rajmachi is a favored spot for trekking and outdoor adventures in Maharashtra's Sahyadri mountain range. Renowned for its historic forts, vibrant greenery, and stunning panoramic views, Rajmachi offers an unforgettable experience for nature lovers and adventure seekers alike. </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Prabalgad Fort</h1>
+          <div class="main2">
+            Prabalgad and Kalavantin Durg are two notable forts nestled in Maharashtra's Western Ghats, near the scenic hill station of Panvel. These forts are famous for their historical importance and offer challenging trekking trails, making them a must-visit for adventure enthusiasts and history buffs alike.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/prabalgad.jpg" alt="Prabalgad Fort">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/bhimashankar.jpg" alt="Bhimashankar Jyotirling Temple">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Bhimashankar Jyotirling Temple</h1>
+          <div class="main2">
+            Bhimashankar, situated in the Sahyadri range of Maharashtra, is a revered pilgrimage destination celebrated for its ancient Shiva temple, recognized as one of India's twelve Jyotirlingas. Nestled amidst verdant landscapes and diverse wildlife, it provides a serene retreat and excellent trekking prospects. Its stunning vistas and profound religious importance attract numerous nature enthusiasts and devotees, making it a sought-after spot for spiritual and leisurely pursuits alike.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">we believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a> 
+                <a href="about.html"><li>About</li></a> 
+                  <li>Services</li>
+                  <a href="contact.html"><li>Contact</li></a> 
+                </ul>
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i> Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fa-envelope"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+</footer>
+<script src="script.js"></script>
+</html>

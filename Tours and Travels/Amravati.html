@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="descripation" content=" Uncover the beauty of Amravati with our comprehensive travel guide. Explore top attractions, must-visit sites, and travel tips for an unforgettable experience in Amravati. Plan your trip today!">
+  <title>Discover Amravati: Explore Top Attractions, Tours, and Travel Guide</title>
+  <link rel="stylesheet" href="Amravati.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+</style>
+
+<body>
+ 
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo">
+                  <i class="logo"></i> Explore2Go
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
+
+                  <li><a href="about.html" class="nav__link">About us</a></li>
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="Northindia.html" class="dropdown__link">
+                              <i class=""></i> North India
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="south.html" class="dropdown__link">
+                              <i class=""></i>  South India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="estern.html" class="dropdown__link">
+                              <i class=""></i>  East India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="west2.html" class="dropdown__link">
+                              <i class=""></i>  West India
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+                  
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="nearby.html" class="dropdown__link">
+                              <i class=""></i> Nearby Adventures
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="sunrise.html" class="dropdown__link">
+                              <i class=""></i> Sunrise Journeys
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="arabian.html" class="dropdown__link">
+                              <i class=""></i> Arabian Nights
+                           </a>
+                        </li>
+                        <li>
+                           <a href="euro.html" class="dropdown__link">
+                              <i class=""></i> Euro Wonders
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+                
+  <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+        AMRAVATI: SACRED SPACES &amp; NATURAL BEAUTY</h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="images/sitabuldi.jpg" alt="Sitabuldi Fort">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Sitabuldi Fort</h1>
+        <div class="main2">
+          Sitabuldi Fort, a renowned historical landmark in Nagpur, is perched on a hill and offers rich historical significance. Notably, it was the battleground of the Battle of Sitabuldi in 1817. A key feature of the fort is the cell where Mahatma Gandhi was held during his imprisonment. Additionally, the fort houses a war memorial honoring the soldiers who sacrificed their lives in the historic battle.
+</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Deeksha Bhoomi</h1>
+        <div class="main2">
+          Deekshabhoomi is a major Buddhist pilgrimage site in India, renowned for its historical and architectural significance. Construction began in 1968 on a four-acre site, including quarters for monks. The impressive stupa, completed in 1978, is the largest stupa in Asia and holds the record as the largest hollow stupa globally. Its unique design features a two-storied, hemispherical structure, each level accommodating up to 5,000 monks. Deekshabhoomi's architectural grandeur and its profound historical importance make it a key destination for Buddhist pilgrims.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/dikshabhoomi.jpg" alt="Diksha Bhoomi">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="images/seminary.webp" alt="Seminary Hill">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Seminary Hill</h1>
+        <div class="main2">Seminary Hill, situated approximately 6 km from Nagpur city, is a popular spot for visitors seeking stunning panoramic views of the city. Named after St. Charles Seminary, this charming hill features well-maintained walking paths, making it an ideal location for a serene trek and peaceful relaxation. With its pleasant weather and breathtaking vistas, Seminary Hill provides a refreshing escape and a tranquil experience for all who visit.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">Ramtek Fort</h1>
+        <div class="main2">
+          This ancient temple complex, located within a historic fortress and believed to date back to the 11th century, is one of Maharashtra's oldest shrines dedicated to Lord Ram. According to legend, during his exile (Van Vas), Lord Ram visited this site, met Sage Agastya, and vowed to defeat the evil kingdom of Ravana based on Sage Agastya's counsel. The premises house multiple temples, including those dedicated to Lord Ram, Lakshmana, Kausalya Devi, Ekadashi Mata, Varaha, and Sage Agastya, among others.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/ramtek.jpg" alt="Ramtek Fort">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="images/futala.jpg" alt="Futala Lake">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Futala Lake</h1>
+        <div class="main2">Futala Lake in Nagpur is a top tourist destination, renowned for its captivating attractions. Spanning over 60 acres, this historic lake boasts vibrant musical fountains, dazzling light shows, and a newly constructed gallery, enhancing its appeal. Each year, Futala Lake attracts thousands of visitors from across Central India. Its expansive open spaces, lush greenery, and various outdoor activities make it especially popular with families and children.
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Amba Khori</h1>
+        <div class="main2">Amba Khori, a breathtaking waterfall near Nagpur, is a perfect destination for a family picnic or a day out with friends. The impressive cascades of water cascading over lush green rocks create a mesmerizing view. This picturesque spot is accessible year-round, making it a great choice for any season. Additionally, its proximity to the Pench River allows visitors to easily include a visit to the riverbanks in their outing plans.
+
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/amba.jpg" alt="Amba Khori">
+      </div>
+    </div>
+    <div class="mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Raman Science Centre</h1>
+          <div class="main2">
+            he Raman Science Centre and Raman Planetarium Complex in Nagpur is a dynamic science center affiliated with Mumbai's Nehru Science Centre. Designed to foster scientific curiosity, it showcases the evolution of science and technology, their industrial applications, and their impact on human welfare through engaging exhibits. Named in honor of the renowned Nobel laureate and Indian physicist, Chandrasekhara Venkata Raman, the center offers an interactive experience for visitors of all ages.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/raman.jpg" alt="Raman Science Centre">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/julabgamun.jpg" alt="Japanese Rose Garden">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Japanese Rose Garden</h1>
+          <div class="main2">The Japanese Rose Garden is a perfect sanctuary for mental and spiritual relaxation, named for its design inspired by Japanese rose cultivation. This beautifully landscaped garden, reflecting Japanese horticultural aesthetics, offers a serene environment that captivates visitors. Its picturesque setting is ideal for capturing stunning photographs and appreciating nature’s splendor in India.   </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Markanda Mahadev Temple</h1>
+          <div class="main2">
+            Markanda Mahadev Temple, also known simply as Markanda, is an ancient shrine dedicated to Lord Shiva, situated in Chamorshi near Nagpur, Maharashtra. The expansive temple complex features several historic temples, some of which are in a state of disrepair. Due to its ancient architecture and resemblance to Khajuraho, this site is frequently referred to as "Mini Khajuraho."</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/markanda.jpg" alt="Markanda Mahadev Temple">
+        </div>
+      </div>
+      
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/sachee.jpg" alt="Sachee Art Gallery">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Sachee Art Gallery</h1>
+          <div class="main2">Sachee Art Gallery, celebrated for its diverse and talented exhibits, also highlights the city's rich cultural heritage. This gallery is a prime destination for experiencing the breadth and skill of contemporary art. Located in a spacious heritage building, Sachee Art Gallery is a must-visit attraction during your stay in Nagpur, India.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      
+      
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">we believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a> 
+                <a href="about.html"><li>About</li></a> 
+                <a href="Maharashtra.html"><li>Services</li></a>
+                  <a href="contact.html"><li>Contact</li></a> 
+                </ul>
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i> Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fa-envelope"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+</footer>
+<script src="script.js"></script>
+</html>

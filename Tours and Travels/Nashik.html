@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the best tourist places in Nashik, from historical sites to scenic vineyards. Plan your perfect getaway with our guide to Nashik's top attractions and activities.">
+  <title>Explore Nashik: Top Tourist Places and Attractions</title>
+  <link rel="stylesheet" href="Nashik.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+</style>
+
+<body>
+ 
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo">
+                  <i class="logo"></i> Explore2Go
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
+
+                  <li><a href="about.html" class="nav__link">About us</a></li>
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="Northindia.html" class="dropdown__link">
+                              <i class=""></i> North India
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="south.html" class="dropdown__link">
+                              <i class=""></i>  South India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="estern.html" class="dropdown__link">
+                              <i class=""></i>  East India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="west2.html" class="dropdown__link">
+                              <i class=""></i>  West India
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+                  
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="nearby.html" class="dropdown__link">
+                              <i class=""></i> Nearby Adventures
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="sunrise.html" class="dropdown__link">
+                              <i class=""></i> Sunrise Journeys
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="arabian.html" class="dropdown__link">
+                              <i class=""></i> Arabian Nights
+                           </a>
+                        </li>
+                        <li>
+                           <a href="euro.html" class="dropdown__link">
+                              <i class=""></i> Euro Wonders
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+                
+  <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+        NASHIK: THE SPIRITUAL &amp; WINE CAPITAL</h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="images/trimabkeshwar.jpg" alt="Trimbakeshwar">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Trimbakeshwar</h1>
+        <div class="main2">Shri Trimbakeshwar Temple, situated approximately 28 km from Nashik, is a significant pilgrimage site in Maharashtra, India. Known for being one of the twelve Jyotirlingas, Trimbakeshwar offers a unique blend of spiritual ambiance, stunning natural beauty, and rich historical significance, making it a must-visit destination for tourists and devotees alike. </div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Shree Saptshrungi Gad Vani Devi</h1>
+        <div class="main2">
+          Located 60 km from Nashik in Kalwan Tahsil, Shree Saptshrungi Gad is a revered pilgrimage site in Maharashtra. This sacred shrine, dedicated to Goddess Saptashrungi Nivasini, is nestled among seven hills near Vani. Visitors to Shree Saptshrungi Gad can experience spiritual tranquility, stunning natural beauty, and exciting trekking opportunities.</div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/vanidevi.jpg" alt="Shree Saptshrungi Gad Vani Devi">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="images/panchvati.jpg" alt="Panchvati">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Panchvati</h1>
+        <div class="main2">
+          Panchavati, situated in Nashik, Maharashtra, holds deep religious and historical significance as per the epic Ramayana. This sacred site is revered as the spot where Lord Rama, accompanied by Sita and Lakshmana, spent a part of their exile. Beyond its spiritual importance, Panchavati offers a blend of cultural heritage and picturesque landscapes, making it a must-visit destination in Nashik.
+          </div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">Kalaram Temple</h1>
+        <div class="main2">
+          Kalaram Mandir is located in the Panchvati area of Nashik City, approximately 3 km from the Central Bus Stand. It is easily accessible by city buses and auto-rickshaws from various parts of the city. According to legend, this temple stands at the exact site where Lord Ram resided during his exile.</div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/kalaram.jpg" alt="Kalaram Temple">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="images/sitagufa.jpg" alt="Sita Gufa">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Sita Gufa</h1>
+        <div class="main2">The Sita Gufa, alternatively spelled as Sita Gumpha or Sita Gupha, holds significant importance in the Ramayana, a pivotal epic in Hindu mythology. This cave is a revered pilgrimage site within Panchavati, drawing pilgrims seeking to connect with the legends of the Ramayana.</div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Harihar Fort</h1>
+        <div class="main2">Harihar Fort is located in the Trimbakeshwar Mountain Range of the Western Ghats. Constructed during the Seuna or Yadava Dynasty (9th to 14th century), the fort served a pivotal role in safeguarding trade routes through the Gonda Ghat.</div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/harihar.jpg" alt="Harihar Fort">
+      </div>
+    </div>
+    <div class="mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Anjaneri Hills</h1>
+          <div class="main2">
+            Anjaneri, renowned as the birthplace of Lord Hanuman and named after his mother Anjani, is nestled within the picturesque Nashik-Trimbakeshwar mountain range. Situated about 20 km from Nashik, Anjaneri fort is revered for its spiritual significance and popular among hiking enthusiasts.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/ajaneri.webp" alt="Anjaneri Hills">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/someshwar waterfall.jpg" alt="Someshwar Waterfall">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Someshwar Waterfall</h1>
+          <div class="main2">Someshwar Waterfalls, found near Gangapur on the outskirts of Nashik, are stunning cascades commonly known as Dudhsagar Waterfalls. A favorite destination for both locals and tourists, this picturesque waterfall emerges from the holy Godavari River, providing a tranquil and scenic getaway in Nasik.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Kapaleshwar Mahadev Temple</h1>
+          <div class="main2">
+            The Kapaleshwar Temple, located near Ram Kund in Nashik, is among the region's ancient temples, dating back around six centuries to its establishment in 1763. Initially built and later restored by the Peshwa Dynasty, this historic site is accessible via approximately 50 steps, commanding a picturesque view and showcasing Nashik's vibrant cultural legacy.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/kapaleshwar.jpg" alt="Kapaleshwar Mahadev Temple">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/sulavines.jpg" alt="Sula Vineyard">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Sula Vineyard</h1>
+          <div class="main2">Founded in 1999, Sula Wines stands as India's premier winery located amidst the scenic vineyards of Nashik. Celebrated for its pioneering spirit and exceptional standards, Sula has elevated Indian wines to international acclaim. Guests can experience vineyard tours, tastings, and the tranquil charm of this renowned destination. </div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Coin Museum</h1>
+          <div class="main2">
+            Established in 1980 under the Indian Institute of Research in Numismatic Studies, this museum is nestled amidst the scenic Anjaneri hills on a sprawling 505-acre campus. It stands as Asia's sole repository with a vast collection and well-documented history of the Indian currency system, making it a unique destination for enthusiasts and researchers alike.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/coin museum.jpg" alt="Coin Museum">
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">We believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a> 
+                <a href="about.html"><li>About</li></a> 
+                <a href="Maharashtra.html"><li>Services</li></a>
+                  <a href="contact.html"><li>Contact</li></a> 
+                </ul>
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i>  Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fa-envelope"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+</footer>
+<script src="script.js"></script>
+</html>

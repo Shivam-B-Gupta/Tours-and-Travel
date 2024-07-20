@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover unforgettable sunrise experiences with our tailored travel tours. Witness nature's beauty at its finest. Book your sunrise adventure today!">
+  <title>Experience Stunning Sunrises with Our Exclusive Tours </title>
+  <link rel="stylesheet" href="sunrise.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+</style>
+
+<body>
+ 
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo">
+                  <i class="logo"></i> Explore2Go
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
+
+                  <li><a href="about.html" class="nav__link">About us</a></li>
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="Northindia.html" class="dropdown__link">
+                              <i class=""></i> North India
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="south.html" class="dropdown__link">
+                              <i class=""></i>  South India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="estern.html" class="dropdown__link">
+                              <i class=""></i>  East India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="west2.html" class="dropdown__link">
+                              <i class=""></i>  West India
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+                  
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="nearby.html" class="dropdown__link">
+                              <i class=""></i> Nearby Adventures
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="sunrise.html" class="dropdown__link">
+                              <i class=""></i> Sunrise Journeys
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="arabian.html" class="dropdown__link">
+                              <i class=""></i> Arabian Nights
+                           </a>
+                        </li>
+                        <li>
+                           <a href="euro.html" class="dropdown__link">
+                              <i class=""></i>  Euro Wonders
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+                
+  <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+        SUNRISE ADVENTURES: URBAN WONDERS &amp; EXOTIC ESCAPE</h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="images/malaysia.jpg" alt="Malaysia">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Malaysia</h1>
+        <div class="main2">
+          Malaysia, a vibrant blend of cultures, provides diverse experiences from lively urban centers to peaceful islands. Explore Kuala Lumpur's dynamic cityscape, see the iconic Petronas Towers, and stroll through the historic George Town in Penang. Discover lush rainforests and pristine beaches in Langkawi, along with bustling street food markets. With its rich heritage and stunning natural landscapes, Malaysia offers an unforgettable adventure and exploration.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Singapore</h1>
+        <div class="main2">
+          Singapore, a dynamic and contemporary city-state, blends culture, cuisine, and innovation. Discover iconic attractions such as Marina Bay Sands, Gardens by the Bay, and Sentosa Island. Experience premier shopping along Orchard Road, indulge in diverse culinary offerings at hawker centers, and immerse yourself in the vibrant nightlife scene. With efficient public transportation and a multicultural atmosphere, Singapore offers an exciting and memorable urban adventure.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/singapore.jpg" alt="Singapore">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="images/indonesia.jpg" alt="Indonesia">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Indonesia</h1>
+        <div class="main2">Indonesia, comprising more than 17,000 islands, boasts diverse landscapes and cultures. Experience the lively cityscape of Jakarta, the ancient temples of Yogyakarta, and the picturesque rice terraces of Bali. Discover the unspoiled beaches of the Gili Islands, the diverse marine ecosystems of Raja Ampat, and the extraordinary wildlife of Komodo National Park. With its cultural richness and natural wonders, Indonesia guarantees an unforgettable adventure.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">Thailand</h1>
+        <div class="main2">
+          Thailand, celebrated for its welcoming hospitality and dynamic culture, provides a wide range of experiences. Discover the lively urban scene of Bangkok, explore historic temples in Chiang Mai, and unwind on the beautiful beaches of Phuket. Immerse yourself in the country's rich heritage, enjoy authentic Thai cuisine, and explore vibrant markets and nightlife. With its scenic beauty and friendly ambiance, Thailand offers an unforgettable journey brimming with joy.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/thailand.jpg" alt="Thailand">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="images/southkorea.jpg" alt="South Korea">
+      </div>
+      <div class="rightside">
+        <h1 class="main">South Korea</h1>
+        <div class="main2">South Korea, blending tradition with innovation, provides an enthralling travel experience. Explore the vibrant streets of Seoul, featuring historic palaces alongside cutting-edge technology. Discover the tranquil charm of Gyeongju's ancient temples and the breathtaking scenery of Jeju Island. Delight in diverse cuisine, from delicious barbecue to spicy kimchi, and immerse yourself in K-pop and lively festivals. With its rich history, scenic beauty, and modern urban centers, South Korea offers a captivating and memorable adventure.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Japan</h1>
+        <div class="main2">Japan, combining tradition with modernity, offers a captivating travel experience with its diverse culture and natural wonders. Discover Tokyo's bustling streets illuminated with neon lights, Kyoto's historic temples, and Osaka's lively culinary scene. Experience the peacefulness of traditional tea ceremonies, the enchantment of cherry blossom season, and the serenity of Mount Fuji. Delve into Japan's rich historical legacy, from samurai traditions to cutting-edge technology, and enjoy a culinary adventure sampling sushi and ramen. With its distinctive allure and warm hospitality, Japan ensures an unforgettable journey of exploration and marvel.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/japan.jpg" alt="Japan">
+      </div>
+    </div>
+   
+      
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">We believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a> 
+                  <a href="about.html"><li>About</li></a> 
+                  <a href="Maharashtra.html"><li>Services</li></a>
+                    <a href="contact.html" class="heading-link">
+                   <li>Contact</li>
+                  </a>
+                </ul>
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i>  Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fa-envelope"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+</footer>
+<script src="script.js"></script>
+</html>

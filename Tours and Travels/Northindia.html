@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+            rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arabian Nights</title>
+        <link rel="stylesheet" href="north.css" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/1165876da6.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .nav__menu.active{
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+</style>
+
+    <body>
+
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo">
+                        <i class="logo"></i> Explore2Go
+                    </a>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link">Home</a></li>
+
+                        <li><a href="about.html" class="nav__link">About us</a></li>
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                India <i
+                                    class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="Northindia.html" class="dropdown__link">
+                                        <i class></i> North India
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="south.html"
+                                        class="dropdown__link">
+                                        <i class></i> South India
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="estern.html" class="dropdown__link">
+                                        <i class></i> East India
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="west2.html" class="dropdown__link">
+                                        <i class></i> West India
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="Maharashtra.html"
+                                class="nav__link">Maharashtra</a></li>
+
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Beyond India <i
+                                    class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="nearby.html"
+                                        class="dropdown__link">
+                                        <i class></i> Nearby Adventures
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="sunrise.html" class="dropdown__link">
+                                        <i class></i> Sunrise Journeys
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="arabian.html" class="dropdown__link">
+                                        <i class></i> Arabian Nights
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="euro.html" class="dropdown__link">
+                                        <i class></i> Euro Wonders
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="contact.html" class="nav__link">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <script type="text/javascript">
+
+    let menu = document.querySelectorAll('#burgericon');
+    let close = document.querySelectorAll('#close-icon');
+    let main = document.querySelectorAll('#nav-menu');
+
+    menu.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+
+    close.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+   
+
+
+
+
+
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+        <section class="Hero">
+            <div class="banner">
+                <h1>
+                    DISCOVER THE BEAUTY OF NORTH INDIA</h1>
+            </div>
+        </section>
+
+        <!-- <div class="overlapping-box"> -->
+        <div class="container3">
+
+            <div class="mini_container">
+                <div class="leftside">
+                    <img src="images/Pangong Lake.jpeg"
+                        alt="Pangong Lake, Ladakh">
+                </div>
+                <div class="rightside" id="R1">
+                    <h1 class="main">PANGONG LAKE</h1>
+                    <h2></h2>
+                    <div class="main2">Save your favourites
+                        easily
+                        and
+                        always have something to watch.
+                        Lorem
+                        ipsum
+                        dolor
+                        sit amet consectetur adipisicing
+                        elit.
+                        Et
+                        natus fuga
+                        eius voluptas sed reiciendis nemo
+                        hic!
+                        Modi
+                        nemo
+                        saepe inventore atque quia harum
+                        laborum
+                        obcaecati
+                        reiciendis amet, temporibus
+                        velit.</div>
+                    <button>Enquiry</button>
+
+                </div>
+            </div>
+
+            <div class="colrev mini_container">
+
+                <div class="leftside">
+                    <h1 class="main">DAL LAKE</h1>
+                    <h2></h2>
+                    <div class="main2">Dal Lake, the jewel
+                        of
+                        Srinagar in
+                        Kashmir, is famous for its serene
+                        waters
+                        dotted with
+                        colorful houseboats and shikaras.
+                        Surrounded
+                        by
+                        picturesque mountains and lush
+                        gardens,
+                        it
+                        offers a
+                        peaceful retreat for visitors.
+                        Experience
+                        the unique
+                        charm of floating markets and enjoy
+                        a
+                        tranquil
+                        sunset cruise on this iconic lake.
+                        Dal
+                        Lake
+                        promises
+                        an unforgettable and relaxing
+                        experience
+                        amidst
+                        stunning natural beauty.
+                    </div> <button>Enquiry</button>
+                </div>
+                <div class="rightside">
+                    <img src="images/dal lake.jpg"
+                        alt="Dal lake, Shrinagar">
+                </div>
+
+            </div>
+
+            <div class="mini_container">
+
+                <div class="leftside">
+                    <img src="images/Gulmarg Gondola.png"
+                        alt="Gulmarg Gondola, Gulmarg">
+                </div>
+                <div class="rightside" id="R1">
+                    <h1 class="main">Gulmarg Gondola</h1>
+                    <h2></h2>
+                    <div class="main2">Gulmarg, nestled in
+                        the
+                        Kashmir
+                        Valley, is a paradise for nature
+                        lovers
+                        and
+                        adventure enthusiasts alike. Known
+                        for
+                        its
+                        pristine
+                        beauty and snow-capped peaks, it
+                        offers
+                        thrilling
+                        skiing and snowboarding
+                        opportunities in
+                        winter,
+                        while summer welcomes visitors with
+                        lush
+                        meadows and
+                        vibrant flowers. Whether you seek
+                        tranquility or
+                        adventure, Gulmarg promises an
+                        unforgettable
+                        experience amidst breathtaking
+                        Himalayan
+                        scenery.
+                    </div> <button>Enquiry</button>
+
+                </div>
+            </div>
+
+            <div class="colrev mini_container">
+                <div class="leftside">
+                    <h1 class="main">Apharwat Peak</h1>
+                    <h2></h2>
+                    <div class="main2">Apharwat Peak,
+                        nestled in
+                        the
+                        Pir Panjal Range of the Himalayas in
+                        Jammu
+                        and Kashmir, offers breathtaking
+                        vistas
+                        and
+                        thrilling adventures. Rising to
+                        about
+                        4,390
+                        meters, it is a paradise for skiers
+                        and
+                        snowboarders during winters, with
+                        powdery
+                        slopes and panoramic views of
+                        snow-capped
+                        mountains. In summer, it transforms
+                        into
+                        a
+                        trekker's haven with lush meadows
+                        and
+                        alpine
+                        flora. Apharwat Peak's beauty and
+                        adventure
+                        allure visitors year-round, making
+                        it a
+                        must-visit destination in
+                        Gulmarg.</div>
+                    <button>Enquiry</button>
+                </div>
+                <div class="rightside">
+                    <img src="images/Apharwat Peak 01.jpg"
+                        alt="Apharwat Peak, Gulmarg">
+                </div>
+
+            </div>
+
+            <div class="mini_container">
+
+                <div class="leftside">
+                    <img
+                        src="images/Gulmarg Golf Course2.jpg"
+                        alt="Gulmarg Golf Course, Gulmarg">
+                </div>
+                <div class="rightside" id="R1">
+                    <h1 class="main">Gulmarg Golf
+                        Course</h1>
+                    <h2></h2>
+                    <div class="main2">Nestled amidst the
+                        Himalayas
+                        in Gulmarg, Jammu and Kashmir, this
+                        scenic
+                        golf course is renowned for its lush
+                        greenery and stunning mountain
+                        backdrop.
+                        Golf enthusiasts and nature lovers
+                        alike
+                        are
+                        drawn to its serene ambiance and
+                        challenging
+                        terrain, offering a unique blend of
+                        sport
+                        and natural beauty.
+
+                    </div> <button>Enquiry</button>
+
+                </div>
+            </div>
+
+            <div class="colrev mini_container">
+
+                <div class="leftside">
+                    <h1 class="main">Alpather Lake</h1>
+                    <h2></h2>
+                    <div class="main2">Located near Gulmarg,
+                        Alpather Lake is a picturesque
+                        high-altitude
+                        lake known for its crystal-clear
+                        waters
+                        and
+                        snow-capped peaks that reflect in
+                        its
+                        pristine surface. Surrounded by
+                        alpine
+                        meadows, it offers a tranquil
+                        retreat
+                        and a
+                        perfect spot for picnics and
+                        photography
+                        amid breathtaking Himalayan scenery.
+
+                    </div> <button>Enquiry</button>
+                </div>
+                <div class="rightside">
+                    <img src="images/Alpather lake 02.jpg"
+                        alt="alpather lake, Gulmarg">
+                </div>
+
+            </div>
+
+            <div class="mini_container">
+
+                <div class="leftside">
+                    <img
+                        src="images/Vaishno Devi Temple1.webp"
+                        alt="Vaishno Devi Temple, Gulmarg">
+                </div>
+                <div class="rightside" id="R1">
+                    <h1 class="main">Vaishno Devi
+                        Temple</h1>
+                    <h2></h2>
+                    <div class="main2">Situated in the
+                        Trikuta
+                        Mountains of Jammu and Kashmir,
+                        Vaishno
+                        Devi
+                        Temple is one of the most revered
+                        Hindu
+                        pilgrimage destinations. Dedicated
+                        to
+                        Goddess Vaishno Devi, the temple
+                        attracts
+                        millions of devotees annually who
+                        trek
+                        through the scenic hills to seek
+                        blessings
+                        and experience spiritual solace in
+                        this
+                        sacred place.
+
+                    </div> <button>Enquiry</button>
+
+                </div>
+            </div>
+
+            <div class="colrev mini_container">
+
+                <div class="leftside">
+                    <h1 class="main">Mughal Gardens</h1>
+                    <h2></h2>
+                    <div class="main2">These beautifully
+                        manicured
+                        gardens in Srinagar, Jammu and
+                        Kashmir,
+                        are
+                        a testament to Mughal architecture
+                        and
+                        horticultural finesse. Lush terraced
+                        lawns,
+                        vibrant flowerbeds, and intricate
+                        water
+                        channels characterize these gardens,
+                        offering a serene retreat amidst
+                        historical
+                        grandeur and natural splendor.
+
+                    </div> <button>Enquiry</button>
+                </div>
+                <div class="rightside">
+                    <img src="images/Mughal Gardens2.jpg"
+                        alt="Mughal Gardens, shrinagar">
+                </div>
+
+            </div>
+
+            <div class="mini_container">
+
+                <div class="leftside">
+                    <img
+                        src="images/Shankaracharya Temple3.jpg"
+                        alt="Shankaracharya Temple, Shrinagar">
+                </div>
+                <div class="rightside" id="R1">
+                    <h1 class="main">Shankaracharya
+                        Temple</h1>
+                    <h2></h2>
+                    <div class="main2">Perched on
+                        Shankaracharya
+                        Hill overlooking Srinagar, this
+                        ancient
+                        Hindu temple is dedicated to Lord
+                        Shiva.
+                        Renowned for its architectural
+                        beauty
+                        and
+                        spiritual significance, it offers
+                        panoramic
+                        views of Srinagar city and Dal Lake
+                        below,
+                        making it a revered pilgrimage site
+                        and
+                        a
+                        peaceful haven for spiritual seekers
+                        and
+                        tourists alike.
+                    </div> <button>Enquiry</button>
+                </div>
+
+            </div>
+
+            <div class="colrev mini_container">
+
+                <div class="leftside">
+                    <h1 class="main">Betaab Valley</h1>
+                    <h2></h2>
+                    <div class="main2">Nestled in the
+                        breathtaking
+                        region of
+                        Pahalgam, Betaab Valley is a
+                        mesmerizing
+                        destination
+                        named after the Bollywood movie
+                        "Betaab."
+                        This
+                        enchanting valley is adorned with
+                        lush
+                        green
+                        meadows, crystal-clear streams, and
+                        surrounded by
+                        snow-capped mountains. Perfect for
+                        nature
+                        lovers and
+                        adventure enthusiasts, Betaab Valley
+                        offers
+                        picturesque landscapes, serene
+                        picnic
+                        spots,
+                        and
+                        thrilling trekking routes. The
+                        pristine
+                        beauty and
+                        tranquility of this valley make it
+                        an
+                        ideal
+                        escape
+                        for those seeking solace and a
+                        closer
+                        connection to
+                        nature. Experience the untouched
+                        charm
+                        of
+                        Betaab
+                        Valley, where every view is a
+                        postcard-perfect
+                        memory waiting to be captured.
+                    </div> <button>Enquiry</button>
+                </div>
+                <div class="rightside">
+                    <img src="images/betaab valley.jpg"
+                        alt="Betaab Valley, Pahalgam">
+                </div>
+
+            </div>
+
+            <div class="mini_container">
+
+                <div class="leftside">
+                    <img src="images/thajiwas-glacier-10.jpg"
+                        alt="Thajiwas Glacier, Sonamarg">
+                </div>
+                <div class="rightside" id="R1">
+                    <h1 class="main">Thajiwas Glacier</h1>
+                    <h2></h2>
+                    <div class="main2">Located just 3
+                        kilometers
+                        from
+                        Sonamarg, Thajiwas Glacier is a
+                        pristine
+                        alpine
+                        wonderland, offering a breathtaking
+                        escape
+                        into
+                        nature's lap. This stunning glacier,
+                        nestled
+                        amidst
+                        snow-capped peaks and lush meadows,
+                        is a
+                        haven for
+                        adventure seekers and nature
+                        enthusiasts
+                        alike.
+                        Accessible by pony rides or treks,
+                        Thajiwas
+                        Glacier
+                        provides awe-inspiring views,
+                        sparkling
+                        ice
+                        formations, and serene surroundings.
+                        During
+                        the
+                        summer, the glacier transforms into
+                        a
+                        paradise with
+                        blooming flowers and cascading
+                        waterfalls.
+                        Whether
+                        you seek thrilling activities like
+                        sledding
+                        or a
+                        tranquil retreat, Thajiwas Glacier
+                        promises
+                        an
+                        unforgettable experience in the
+                        heart of
+                        Kashmir's
+                        natural splendor.</div>
+                    <button>Enquiry</button>
+
+                </div>
+            </div>
+
+            <div>
+                <h1>Himachal Pradesh</h1>
+            </div>
+
+            <div class="colrev mini_container">
+
+                <div class="leftside">
+                    <h1 class="main">Solang
+                        Valley</h1>
+                    <h2></h2>
+                    <div class="main2">Solang
+                        Valley,
+                        nestled
+                        between Solang
+                        village and Beas Kund, is a
+                        paradise
+                        for
+                        adventure
+                        enthusiasts and nature
+                        lovers in
+                        Manali.
+                        Known for
+                        its stunning landscapes, the
+                        valley
+                        offers
+                        thrilling
+                        activities such as
+                        paragliding,
+                        skiing,
+                        zorbing, and
+                        snowmobiling. In winter, it
+                        transforms into
+                        a snowy
+                        wonderland, perfect for
+                        skiing
+                        and
+                        snowboarding,
+                        while summer brings lush
+                        green
+                        meadows ideal
+                        for
+                        paragliding and trekking.
+                        The
+                        panoramic
+                        views of the
+                        surrounding mountains and
+                        glaciers
+                        make
+                        Solang
+                        Valley a must-visit
+                        destination.
+                        Whether you
+                        seek
+                        adrenaline-pumping
+                        adventures or
+                        serene
+                        nature
+                        walks, Solang Valley
+                        promises an
+                        unforgettable
+                        experience in the heart of
+                        the
+                        Himalayas.</div>
+                    <button>Enquiry</button>
+                </div>
+                <div class="rightside">
+                    <img
+                        src="images/solang valley1.jpg"
+                        alt="Dal lake, Shrinagar">
+                </div>
+
+            </div>
+
+            <div class="mini_container">
+                <div class="leftside">
+                    <img
+                        src="images/the Ridge.jpg"
+                        alt="Pangong Lake, Ladakh">
+                </div>
+                <div class="rightside">
+                    <h1 class="main">The Ridge</h1>
+                    <h2></h2>
+                    <div class="main2">The Ridge in
+                        Shimla
+                        is the
+                        vibrant
+                        heart of the city, offering
+                        panoramic views
+                        of the
+                        surrounding mountains and a
+                        glimpse
+                        into the
+                        town's
+                        colonial past. This large
+                        open
+                        space
+                        is a
+                        hub of
+                        activity, featuring charming
+                        cafes,
+                        bustling
+                        shops,
+                        and historical landmarks
+                        like
+                        Christ
+                        Church
+                        and the
+                        Tudor-style library. The
+                        Ridge
+                        is
+                        also the
+                        focal
+                        point for major events and
+                        festivals,
+                        including the
+                        famous Summer Festival.
+                        Stroll
+                        along
+                        its
+                        wide
+                        promenades, soak in the
+                        breathtaking
+                        vistas,
+                        and
+                        immerse yourself in the
+                        lively
+                        atmosphere.
+                        The Ridge
+                        is an essential stop for
+                        anyone
+                        visiting
+                        Shimla,
+                        capturing the essence of
+                        this
+                        hill
+                        station's
+                        charm
+                        and history.</div>
+                    <button>Enquiry</button>
+
+                </div>
+            </div>
+
+            <div class="colrev mini_container">
+
+                <div class="leftside">
+                    <h1 class="main">McLeod
+                        Ganj</h1>
+                    <h2></h2>
+                    <div class="main2">McLeod Ganj,
+                        perched
+                        above
+                        Dharamshala in Himachal
+                        Pradesh,
+                        is
+                        renowned
+                        as the
+                        home of the Dalai Lama and
+                        the
+                        Tibetan
+                        government-in-exile. Known
+                        as
+                        "Little Lhasa," this
+                        charming town blends Tibetan
+                        and
+                        Indian
+                        cultures,
+                        offering a unique spiritual
+                        and
+                        cultural
+                        experience.
+                        The town is dotted with
+                        monasteries,
+                        including the
+                        famous Namgyal Monastery,
+                        and
+                        vibrant
+                        Tibetan
+                        markets. Visitors can
+                        explore
+                        the
+                        Tsuglagkhang
+                        Complex, where the Dalai
+                        Lama
+                        resides, and
+                        enjoy
+                        serene walks through Bhagsu
+                        Waterfall and
+                        Triund
+                        Hill. With its tranquil
+                        ambiance,
+                        meditation
+                        centers, and stunning
+                        mountain
+                        views, McLeod
+                        Ganj is
+                        a haven for those seeking
+                        peace
+                        and
+                        enlightenment
+                        amidst natural beauty.</div>
+                    <button>Enquiry</button>
+                </div>
+                <div class="rightside">
+                    <img
+                        src="images/Mcleodganj hill.jpg"
+                        alt="Betaab Valley, Pahalgam">
+                </div>
+
+            </div>
+
+            <div class="mini_container">
+
+                <div class="leftside">
+                    <img
+                        src="images/Great himalayan national park.jpg"
+                        alt="Thajiwas Glacier, Sonamarg">
+                </div>
+                <div class="rightside">
+                    <h1 class="main">Great Himalayan
+                        National
+                        Park</h1>
+                    <h2></h2>
+                    <div class="main2">The Great
+                        Himalayan
+                        National
+                        Park,
+                        located in the Kullu region
+                        of
+                        Himachal
+                        Pradesh, is
+                        a UNESCO World Heritage Site
+                        renowned for
+                        its rich
+                        biodiversity and stunning
+                        landscapes.
+                        Spanning over
+                        1,170 square kilometers, the
+                        park
+                        encompasses lush
+                        valleys, dense forests,
+                        alpine
+                        meadows, and
+                        snow-capped peaks. It is
+                        home to
+                        diverse
+                        flora and
+                        fauna, including rare and
+                        endangered
+                        species
+                        such as
+                        the Western Tragopan, Snow
+                        Leopard,
+                        and
+                        Himalayan
+                        Brown Bear. Adventure
+                        enthusiasts
+                        can embark
+                        on
+                        thrilling treks, exploring
+                        pristine
+                        trails
+                        and
+                        picturesque vistas. The park
+                        offers
+                        a serene
+                        escape
+                        into nature, where visitors
+                        can
+                        experience
+                        the
+                        untouched beauty of the
+                        Himalayas.</div>
+                    <button>Enquiry</button>
+
+                </div>
+            </div>
+
+            <div class="colrev mini_container">
+
+                <div class="leftside">
+                    <h1 class="main">Monkey
+                        Point</h1>
+                    <h2></h2>
+                    <div class="main2">Monkey Point,
+                        the
+                        highest
+                        point in
+                        Kasauli, offers breathtaking
+                        panoramic views
+                        of the
+                        surrounding hills and
+                        valleys.
+                        Named
+                        after
+                        the
+                        Rhesus monkeys that inhabit
+                        the
+                        area, this
+                        scenic
+                        spot is also home to a
+                        revered
+                        Hanuman
+                        temple,
+                        believed to be the place
+                        where
+                        Lord
+                        Hanuman's foot
+                        touched the ground during
+                        his
+                        journey to
+                        find the
+                        Sanjeevani herb. Visitors
+                        can
+                        enjoy
+                        a serene
+                        walk up
+                        to the point, taking in the
+                        fresh
+                        mountain
+                        air and
+                        stunning vistas, including
+                        views
+                        of
+                        the
+                        Sutlej River
+                        and Chandigarh on a clear
+                        day.
+                        Monkey Point
+                        is a
+                        must-visit for its natural
+                        beauty,
+                        spiritual
+                        significance, and tranquil
+                        ambiance.</div>
+                    <button>Enquiry</button>
+                </div>
+                <div class="rightside">
+                    <img
+                        src="images/Monkey point.webp"
+                        alt="Betaab Valley, Pahalgam">
+                </div>
+
+            </div>
+
+            <div class="mini_container">
+
+                <div class="leftside">
+                    <img
+                        src="images/hedimba temple.png"
+                        alt="Thajiwas Glacier, Sonamarg">
+                </div>
+                <div class="rightside">
+                    <h1 class="main">hedimba
+                        temple</h1>
+                    <h2></h2>
+                    <div class="main2">The Hadimba
+                        Temple,
+                        nestled in the serene
+                        forests of
+                        Manali, captivates with its
+                        unique
+                        pagoda-style architecture
+                        and
+                        tranquil surroundings.
+                        Dedicated
+                        to
+                        Hidimbi Devi, a figure from
+                        the
+                        Mahabharata, its intricately
+                        carved
+                        wooden façade tells tales of
+                        ancient
+                        craftsmanship and devotion.
+                        Surrounded by towering cedar
+                        trees,
+                        this sacred sanctuary offers
+                        a
+                        spiritual retreat and a
+                        glimpse
+                        into
+                        Himachal's rich cultural
+                        heritage,
+                        making it a cherished
+                        destination
+                        for seekers of peace and
+                        history.</div>
+                    <button>Enquiry</button>
+                </div>
+
+            </div>
+
+            <div>
+                <h1>Punjab</h1>
+            </div>
+
+            <div class="container5">
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Golden
+                            Temple</h1>
+                        <h2></h2>
+                        <div class="main2">The Golden
+                            Temple, or
+                            Harmandir
+                            Sahib, in Amritsar, Punjab,
+                            is
+                            the
+                            spiritual
+                            and
+                            cultural heart of Sikhism.
+                            Its
+                            breathtaking
+                            architecture features
+                            gold-plated
+                            domes and
+                            marble
+                            walls adorned with intricate
+                            designs
+                            and
+                            verses from
+                            the Guru Granth Sahib, the
+                            holy
+                            scripture of
+                            Sikhism. The temple is
+                            surrounded by
+                            the
+                            serene
+                            Amrit Sarovar (Pool of
+                            Nectar),
+                            symbolizing
+                            purity
+                            and spiritual awakening.
+                            Pilgrims
+                            from
+                            around the
+                            world visit to experience
+                            the
+                            peaceful
+                            ambiance,
+                            partake in the community
+                            kitchen
+                            (langar)
+                            serving
+                            free meals to all visitors
+                            regardless of
+                            background,
+                            and witness the mesmerizing
+                            beauty
+                            of the
+                            temple
+                            illuminated at night,
+                            reflecting
+                            in
+                            the holy
+                            waters.</div>
+                        <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/Golden-Temple-in-Amritsar.jpg"
+                            alt="Betaab Valley, Pahalgam">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+
+                    <div class="leftside">
+                        <img
+                            src="images/Rock Garden.jpg"
+                            alt="Thajiwas Glacier, Sonamarg">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Rock
+                            Garden</h1>
+                        <h2></h2>
+                        <div class="main2">The Rock
+                            Garden
+                            in
+                            Chandigarh
+                            is a
+                            marvel of creativity and
+                            recycling,
+                            built by
+                            Nek
+                            Chand using industrial and
+                            urban
+                            waste
+                            materials.
+                            Spread across acres, it
+                            features
+                            sculptures,
+                            pathways, and artistic
+                            structures
+                            made from
+                            discarded items like
+                            bangles,
+                            tiles,
+                            and
+                            broken
+                            glass. The garden's
+                            intricate
+                            design
+                            and
+                            vibrant
+                            mosaic artwork attract
+                            visitors
+                            seeking a
+                            blend of
+                            art, innovation, and
+                            environmental
+                            conservation.</div>
+                        <button>Enquiry</button>
+                    </div>
+                </div>
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Punjab
+                            Agricultural
+                            University
+                            Museum</h1>
+                        <h2></h2>
+                        <div class="main2">The Punjab
+                            Agricultural
+                            University
+                            Museum in Ludhiana showcases
+                            Punjab's
+                            agricultural
+                            heritage and technological
+                            advancements. It
+                            houses a
+                            diverse collection of
+                            artifacts,
+                            tools, and
+                            exhibits
+                            related to farming
+                            practices,
+                            crop
+                            cultivation, and
+                            rural life. Visitors can
+                            explore
+                            interactive
+                            displays highlighting the
+                            evolution
+                            of
+                            agriculture
+                            in Punjab, from traditional
+                            farming
+                            methods
+                            to
+                            modern innovations, making
+                            it an
+                            educational
+                            and
+                            insightful experience for
+                            all.</div>
+                        <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/Punjab Agricultural university museum1.jpg"
+                            alt="Betaab Valley, Pahalgam">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+
+                    <div class="leftside">
+                        <img
+                            src="images/Qila Mubarak.jpg"
+                            alt="Thajiwas Glacier, Sonamarg">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Qila
+                            Mubarak</h1>
+                        <h2></h2>
+                        <div class="main2">Qila Mubarak
+                            in
+                            Patiala is a
+                            majestic
+                            fort complex steeped in Sikh
+                            history
+                            and
+                            architectural splendor.
+                            Built in
+                            the
+                            18th
+                            century,
+                            it houses multiple palaces,
+                            including the
+                            grand Moti
+                            Bagh Palace and Sheesh
+                            Mahal,
+                            adorned with
+                            intricate
+                            mirror work. The fort's
+                            sprawling
+                            grounds
+                            feature
+                            gardens, museums displaying
+                            royal
+                            artifacts,
+                            and a
+                            heritage walk offering
+                            glimpses
+                            into
+                            Punjab's royal
+                            legacy. Qila Mubarak stands
+                            as a
+                            testament
+                            to
+                            Patiala's rich cultural
+                            heritage
+                            and
+                            architectural
+                            brilliance, drawing history
+                            enthusiasts and
+                            architecture aficionados
+                            alike.</div>
+                        <button>Enquiry</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="Uttrakhand">
+            <div>
+                <h1>Uttrakhand</h1>
+            </div>
+
+            <div class="container5">
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Naini Lake</h1>
+                        <h2></h2>
+                        <div class="main2">Naini Lake,
+                            nestled
+                            amidst
+                            the hills
+                            of Nainital, is a serene
+                            natural
+                            freshwater
+                            body
+                            that reflects the
+                            surrounding
+                            lush
+                            greenery
+                            and
+                            majestic mountains. Boating
+                            on
+                            its
+                            crystal-clear
+                            waters is a popular
+                            activity,
+                            offering
+                            tranquil
+                            views and a refreshing
+                            escape.
+                            Surrounded by
+                            charming cafes and shops
+                            along
+                            its
+                            perimeter, Naini
+                            Lake is not just a scenic
+                            spot
+                            but
+                            also a
+                            hub of
+                            leisurely walks and cultural
+                            experiences,
+                            making it
+                            a quintessential destination
+                            for
+                            both
+                            relaxation and
+                            exploration in the heart of
+                            Nainital.
+                        </div> <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/naini lake.jpg"
+                            alt="Dal lake, Shrinagar">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+
+                    <div class="leftside">
+                        <img
+                            src="images/laxman jhula.jpg"
+                            alt="Gulmarg Gondola, Gulmarg">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Laxman
+                            Jhula</h1>
+                        <h2></h2>
+                        <div class="main2">Laxman Jhula,
+                            an
+                            iconic
+                            suspension
+                            bridge over the Ganges River
+                            in
+                            Rishikesh,
+                            offers
+                            mesmerizing views of the
+                            river
+                            and
+                            the
+                            surrounding
+                            Himalayan foothills. Named
+                            after
+                            Lord
+                            Laxman, this
+                            pedestrian bridge is steeped
+                            in
+                            mythology
+                            and
+                            spirituality, attracting
+                            pilgrims
+                            and
+                            tourists
+                            alike. As you stroll across
+                            Laxman
+                            Jhula,
+                            feel the
+                            gentle sway underfoot and
+                            witness
+                            the
+                            bustling
+                            atmosphere with shops
+                            selling
+                            spiritual
+                            items and
+                            cafes offering scenic river
+                            views.
+                            Whether
+                            for
+                            spiritual solace or scenic
+                            serenity,
+                            Laxman
+                            Jhula
+                            embodies the essence of
+                            Rishikesh's
+                            vibrant
+                            culture
+                            and natural beauty.
+                        </div> <button>Enquiry</button>
+                    </div>
+                </div>
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Har Ki
+                            Pauri</h1>
+                        <h2></h2>
+                        <div class="main2">Har Ki Pauri,
+                            the
+                            sacred ghat
+                            on the
+                            Ganges River in Haridwar, is
+                            revered
+                            as one
+                            of the
+                            holiest places in Hinduism.
+                            Literally
+                            meaning
+                            "Footsteps of God," it is
+                            believed
+                            that Lord
+                            Vishnu
+                            left his footprint here.
+                            Pilgrims
+                            flock to
+                            Har Ki
+                            Pauri for a holy dip in the
+                            Ganges,
+                            especially
+                            during the evening Ganga
+                            Aarti,
+                            a
+                            mesmerizing ritual
+                            of lights and prayers. The
+                            atmosphere is
+                            charged
+                            with spirituality and
+                            devotion,
+                            offering a
+                            profound
+                            experience of Hindu rituals
+                            and
+                            traditions
+                            amidst
+                            the sound of chanting and
+                            the
+                            flickering
+                            glow of oil
+                            lamps.
+                        </div> <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/har ki puri.jpeg"
+                            alt="Betaab Valley, Pahalgam">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+
+                    <div class="leftside">
+                        <img
+                            src="images/dhikala zone1.jpg"
+                            alt="Thajiwas Glacier, Sonamarg">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Dhikala
+                            Zone</h1>
+                        <h2></h2>
+                        <div class="main2">Dhikala Zone
+                            in
+                            Jim
+                            Corbett
+                            National
+                            Park is a wildlife
+                            enthusiast's
+                            paradise,
+                            renowned
+                            for its diverse flora and
+                            fauna.
+                            This vast
+                            wilderness offers thrilling
+                            wildlife
+                            safaris, where
+                            you can spot majestic Bengal
+                            tigers,
+                            elephants,
+                            deer, and various bird
+                            species
+                            in
+                            their
+                            natural
+                            habitat. The landscape
+                            varies
+                            from
+                            dense
+                            forests to
+                            grasslands and riverine
+                            belts,
+                            providing
+                            ample
+                            opportunities for wildlife
+                            viewing
+                            and
+                            photography.
+                            Dhikala's remote location
+                            within
+                            the
+                            park
+                            enhances
+                            the adventure, offering a
+                            chance
+                            to
+                            connect
+                            with
+                            nature and experience the
+                            raw
+                            beauty
+                            of
+                            India's
+                            oldest national park
+                            firsthand.</div>
+                        <button>Enquiry</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <h1>Haryana</h1>
+            </div>
+
+            <div class="container5">
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Kingdom of
+                            Dreams</h1>
+                        <h2></h2>
+                        <div class="main2">Kingdom of
+                            Dreams
+                            in
+                            Gurgaon
+                            is
+                            India's first live
+                            entertainment,
+                            theatre,
+                            and
+                            leisure destination. This
+                            extravagant
+                            complex offers
+                            a blend of India's art,
+                            culture,
+                            heritage,
+                            craft,
+                            cuisine, and performing
+                            arts.
+                            Highlights
+                            include the
+                            Nautanki Mahal, a grand
+                            theatre
+                            that
+                            hosts
+                            Bollywood-style musicals,
+                            and
+                            Culture Gully,
+                            an
+                            indoor boulevard featuring
+                            diverse
+                            food and
+                            crafts
+                            from various states. With
+                            its
+                            vibrant shows,
+                            themed
+                            restaurants, and interactive
+                            exhibits,
+                            Kingdom of
+                            Dreams provides an immersive
+                            cultural
+                            experience,
+                            making it a must-visit for
+                            tourists
+                            and
+                            locals
+                            seeking entertainment and a
+                            taste of
+                            India's
+                            diverse
+                            traditions.
+
+                        </div> <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/kingdom of Dreams 001.jpg"
+                            alt="Dal lake, Shrinagar">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+                    <div class="leftside">
+                        <img
+                            src="images/brahmana sarovar.jpg"
+                            alt="Pangong Lake, Ladakh">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Brahma
+                            Sarovar</h1>
+                        <h2></h2>
+                        <div class="main2">Brahma
+                            Sarovar in
+                            Kurukshetra
+                            is an
+                            ancient and revered water
+                            tank,
+                            believed to
+                            be the
+                            site where Lord Brahma
+                            created
+                            the
+                            universe.
+                            This
+                            vast sarovar is a
+                            significant
+                            pilgrimage
+                            destination, especially
+                            during
+                            solar
+                            eclipses and
+                            the Gita Jayanti festival,
+                            when
+                            thousands
+                            gather for
+                            a holy dip. The serene
+                            surroundings,
+                            with a
+                            central
+                            island and well-maintained
+                            ghats,
+                            provide a
+                            peaceful
+                            ambiance for reflection and
+                            prayer.
+                            The
+                            evening
+                            aarti, with lamps floating
+                            on
+                            the
+                            water,
+                            creates a
+                            mesmerizing spiritual
+                            experience,
+                            making
+                            Brahma
+                            Sarovar a must-visit for its
+                            religious and
+                            historical
+                            significance.</div>
+                        <button>Enquiry</button>
+                    </div>
+                </div>
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Panipat
+                            Museum</h1>
+                        <h2></h2>
+                        <div class="main2">Panipat
+                            Museum in
+                            Panipat is
+                            dedicated to preserving and
+                            showcasing the
+                            rich
+                            history of the three pivotal
+                            battles
+                            fought
+                            in the
+                            region. The museum houses an
+                            extensive
+                            collection of
+                            artifacts, weapons,
+                            paintings,
+                            and
+                            dioramas
+                            that
+                            depict the historical and
+                            cultural
+                            heritage
+                            of
+                            Panipat. Visitors can
+                            explore
+                            exhibits
+                            detailing the
+                            battles, significant
+                            figures,
+                            and
+                            the
+                            socio-political impact of
+                            these
+                            events on
+                            Indian
+                            history. The museum provides
+                            an
+                            educational
+                            and
+                            immersive experience, making
+                            it
+                            an
+                            essential
+                            stop
+                            for history enthusiasts and
+                            those
+                            interested
+                            in
+                            understanding the legacy of
+                            Panipat.
+
+                        </div> <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/Panipat museum.jpg"
+                            alt="Betaab Valley, Pahalgam">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+
+                    <div class="leftside">
+                        <img
+                            src="images/surajkund mela.webp"
+                            alt="surajkund mela">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Surajkund
+                            Mela</h1>
+                        <h2></h2>
+                        <div class="main2">Surajkund
+                            Mela,
+                            held
+                            annually
+                            in
+                            Faridabad, is a
+                            world-renowned
+                            crafts fair
+                            celebrating India's
+                            traditional
+                            arts,
+                            crafts, and
+                            culture. Each February,
+                            artisans
+                            from across
+                            India
+                            and international
+                            participants
+                            showcase
+                            their
+                            handcrafted products,
+                            ranging
+                            from
+                            textiles
+                            and
+                            pottery to jewelry and
+                            decor.
+                            The
+                            fair also
+                            features
+                            cultural performances, folk
+                            dances,
+                            and
+                            culinary
+                            delights from different
+                            regions.
+                            Set
+                            against
+                            the
+                            backdrop of the picturesque
+                            Surajkund Lake,
+                            the mela
+                            offers a vibrant and festive
+                            atmosphere,
+                            making it a
+                            must-visit event for those
+                            seeking
+                            to
+                            experience the
+                            rich and diverse cultural
+                            heritage
+                            of India.
+
+                        </div> <button>Enquiry</button>
+                    </div>
+                </div>
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Ambala
+                            Cantt</h1>
+                        <h2></h2>
+                        <div class="main2">Ambala Cantt,
+                            short
+                            for
+                            Ambala
+                            Cantonment, is a prominent
+                            and
+                            historic area
+                            known
+                            for its military
+                            significance
+                            and
+                            bustling
+                            markets.
+                            Established during the
+                            British
+                            colonial era,
+                            it
+                            features well-preserved
+                            colonial
+                            architecture and a
+                            vibrant atmosphere. The
+                            cantonment
+                            area is
+                            renowned
+                            for its shopping,
+                            particularly
+                            in
+                            textiles
+                            and
+                            garments, attracting
+                            visitors
+                            from
+                            nearby
+                            regions.
+                            Key landmarks include the
+                            bustling
+                            Sadar
+                            Bazaar,
+                            Saint Paul's Church, and
+                            various
+                            other
+                            historical
+                            sites. Ambala Cantt offers a
+                            unique
+                            blend of
+                            history, commerce, and
+                            culture,
+                            making it a
+                            popular
+                            destination for both
+                            shopping
+                            and
+                            exploring
+                            colonial
+                            heritage.
+
+                        </div> <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/Ambala cantt.jpg"
+                            alt="Ambala cantt">
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <h1>Delhi</h1>
+            </div>
+
+            <div class="container5">
+
+                <div class="mini_container">
+                    <div class="leftside">
+                        <img
+                            src="images/Red fort.png"
+                            alt="Red fort">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Red Fort</h1>
+                        <h2></h2>
+                        <div class="main2">The Red Fort,
+                            an iconic symbol of India's
+                            rich heritage, stands
+                            majestically in Delhi. Built
+                            by Mughal Emperor Shah Jahan
+                            in 1648, this UNESCO World
+                            Heritage site captivates
+                            with its imposing red
+                            sandstone walls, intricate
+                            carvings, and sprawling
+                            gardens. The fort's
+                            historical significance and
+                            architectural grandeur make
+                            it a must-visit destination,
+                            offering a mesmerizing
+                            glimpse into India's royal
+                            past and Mughal
+                            splendor.</div>
+                        <button>Enquiry</button>
+                    </div>
+                </div>
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">India Gate</h1>
+                        <h2></h2>
+                        <div class="main2">India Gate, a
+                            majestic war memorial in New
+                            Delhi, honors the bravery of
+                            Indian soldiers. Designed by
+                            Sir Edwin Lutyens and
+                            inaugurated in 1931, its
+                            42-meter-high archway stands
+                            proudly, inscribed with the
+                            names of fallen soldiers
+                            from World War I. Surrounded
+                            by lush lawns and
+                            illuminated at night, India
+                            Gate is a symbol of national
+                            pride and a popular spot for
+                            both locals and
+                            tourists.</div>
+                        <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/India gate.png"
+                            alt="India gate">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+
+                    <div class="leftside">
+                        <img
+                            src="images/Qutub Minar 001.jpg"
+                            alt="Qutub Minar">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Qutub
+                            Minar</h1>
+                        <h2></h2>
+                        <div class="main2">Qutub Minar,
+                            a UNESCO World Heritage site
+                            in Delhi, is a soaring
+                            73-meter tall tower of
+                            victory, built in 1193 by
+                            Qutab-ud-din Aibak. Its
+                            intricate carvings and
+                            detailed inscriptions
+                            showcase Indo-Islamic
+                            architecture. The five-story
+                            minaret, made of red
+                            sandstone and marble, stands
+                            as a testament to Delhi's
+                            rich historical legacy.
+                        </div> <button>Enquiry</button>
+                    </div>
+                </div>
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Humayun's
+                            Tomb</h1>
+                        <h2></h2>
+                        <div class="main2">Humayun's
+                            Tomb, a UNESCO World
+                            Heritage site in Delhi, is a
+                            magnificent example of
+                            Mughal architecture. Built
+                            in 1570, it is the final
+                            resting place of the Mughal
+                            Emperor Humayun. The tomb's
+                            grand structure, set within
+                            a Persian-style garden,
+                            paved the way for future
+                            Mughal architecture,
+                            including the Taj Mahal.
+
+                        </div> <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/Humayun's  Tomb.png"
+                            alt="Humayun's  Tomb">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+
+                    <div class="leftside">
+                        <img
+                            src="images/Lotus temple.png"
+                            alt="Lotus temple">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Lotus
+                            Temple</h1>
+                        <h2></h2>
+                        <div class="main2">The Lotus
+                            Temple in Delhi, shaped like
+                            a blossoming lotus flower,
+                            is a stunning example of
+                            modern architecture. Opened
+                            in 1986, this Bahá'í House
+                            of Worship welcomes people
+                            of all faiths to meditate
+                            and find peace. Surrounded
+                            by nine pools, the serene
+                            ambiance and unique design
+                            make it a must-visit
+                            landmark.
+
+                        </div> <button>Enquiry</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <h1>Uttar Pradesh</h1>
+            </div>
+
+            <div class="container5">
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Kashi
+                            Vishwanath
+                            Temple</h1>
+                        <h2></h2>
+                        <div class="main2">Located along
+                            the
+                            holy Ganges River in
+                            Varanasi,
+                            the
+                            Kashi Vishwanath Temple is a
+                            revered
+                            Hindu shrine dedicated to
+                            Lord
+                            Shiva. Its towering spires
+                            and
+                            intricate architecture
+                            reflect
+                            centuries of spiritual
+                            devotion
+                            and
+                            cultural heritage,
+                            attracting
+                            millions of pilgrims seeking
+                            blessings and solace.
+
+                        </div> <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/Kashi Vishwanath Temple.jpg"
+                            alt="Kashi Vishwanath Temple">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+                    <div class="leftside">
+                        <img
+                            src="images/Ram Janmabhoomi.jpeg"
+                            alt="brahmana sarovar">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Ram
+                            Janmabhoomi</h1>
+                        <h2></h2>
+                        <div class="main2">Situated in
+                            Ayodhya,
+                            Ram Janmabhoomi is believed
+                            to
+                            be
+                            the birthplace of Lord Ram.
+                            It
+                            holds
+                            deep religious significance
+                            for
+                            Hindus worldwide,
+                            symbolizing
+                            faith,
+                            unity, and historical
+                            reverence.
+
+                        </div> <button>Enquiry</button>
+                    </div>
+                </div>
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Prem
+                            Mandir</h1>
+                        <h2></h2>
+                        <div class="main2">Shri Krishna
+                            Janmabhoomi Temple in
+                            Mathura
+                            stands
+                            as a revered site where Lord
+                            Krishna
+                            is believed to have been
+                            born.
+                            Its
+                            serene ambiance and
+                            intricate
+                            architecture captivate
+                            devotees
+                            and
+                            tourists alike, offering a
+                            glimpse
+                            into Hindu mythology and
+                            spiritual
+                            devotion. The temple complex
+                            includes ancient shrines,
+                            beautifully adorned halls,
+                            and
+                            vibrant surroundings that
+                            echo
+                            with
+                            the chants of hymns and
+                            prayers,
+                            making it a significant
+                            pilgrimage
+                            destination in India.
+                        </div> <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/prem mandir.jpg"
+                            alt="Panipat museum">
+                    </div>
+                </div>
+
+                <div class="mini_container">
+
+                    <div class="leftside">
+                        <img
+                            src="images/BARA IMAMBARA.jpg"
+                            alt="surajkund mela">
+                    </div>
+                    <div class="rightside">
+                        <h1 class="main">Bara
+                            Imambara</h1>
+                        <h2></h2>
+                        <div class="main2">Bara Imambara
+                            in
+                            Lucknow is a marvel of
+                            Mughal
+                            architecture and a symbol of
+                            grandeur from the 18th
+                            century.
+                            Built by Nawab
+                            Asaf-ud-Daula, it
+                            includes the impressive
+                            Bhul-Bhulaiya labyrinth,
+                            which
+                            intrigues visitors with its
+                            intricate maze of narrow
+                            passages.
+                            The central hall, with its
+                            massive
+                            vaulted ceiling unsupported
+                            by
+                            pillars, showcases
+                            exceptional
+                            craftsmanship. Bara Imambara
+                            stands
+                            as a testament to Lucknow's
+                            cultural
+                            heritage and architectural
+                            prowess,
+                            drawing tourists and
+                            historians
+                            alike to its majestic halls
+                            and
+                            intriguing maze.
+                        </div> <button>Enquiry</button>
+                    </div>
+                </div>
+
+                <div class="colrev mini_container">
+
+                    <div class="leftside">
+                        <h1 class="main">Jhansi
+                            Fort</h1>
+                        <h2></h2>
+                        <div class="main2">The Jhansi
+                            Fort,
+                            located in the city of
+                            Jhansi in
+                            Uttar Pradesh, is a symbol
+                            of
+                            valor
+                            and resilience. It gained
+                            prominence
+                            during the Indian Rebellion
+                            of
+                            1857
+                            when Rani Lakshmi Bai, the
+                            Queen
+                            of
+                            Jhansi, led her forces
+                            against
+                            the
+                            British. The fort's
+                            strategic
+                            location atop a hill offers
+                            panoramic views of the city.
+                            Its
+                            architecture reflects a
+                            blend of
+                            Rajput and Mughal styles,
+                            with
+                            imposing walls, bastions,
+                            and
+                            intricately designed gates.
+                            Today,
+                            it stands as a proud
+                            reminder of
+                            India's struggle for
+                            independence.
+                        </div> <button>Enquiry</button>
+                    </div>
+                    <div class="rightside">
+                        <img
+                            src="images/Jhansi fort 001.jpg"
+                            alt="Betaab Valley, Pahalgam">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 square">
+                    <div class="brand">Company</div>
+                    <p class="about">We believe travel is more than just
+                        visiting new places; it's about creating unforgettable
+                        experiences, discovering new cultures, and making
+                        lifelong memories. Founded in 2024 , we have grown from
+                        a passionate team of travel enthusiasts into a leading
+                        tour and travel company dedicated to bringing the world
+                        closer to you.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 square">
+                    <div class="heading">Site Map</div>
+                    <ul class="l-list">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="about.html"><li>About</li></a>
+                        <a href="Maharashtra.html"><li>Services</li></a>
+                        <a href="contact.html" class="heading-link">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 square">
+                    <div class="heading">Contact</div>
+                    <ul class="contact">
+                        <li><i class="fa-solid fa-house"></i>  Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                        <li><i class="fa-solid fa-envelope"></i>
+                            Email@gmail.com</li>
+                        <li><i class="fa-solid fa-envelope"></i> +4545
+                            4544545</li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="social-media">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fas fa-phone"></i></li>
+            </ul>
+        </div>
+        <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+            &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+    </footer>
+    <script src="north script.js"></script>
+</html>

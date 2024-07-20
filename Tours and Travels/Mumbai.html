@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Mumbai and its neighboring cities with Explore2Go. Explore attractions, tours, and travel information for a comprehensive experience of this vibrant region.">
+  <title>Explore Mumbai and Surrounding Cities | Explore2Go</title>
+  <link rel="stylesheet" href="Mumbai.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+</style>
+
+<body>
+ 
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo">
+                  <i class="logo"></i> Explore2Go
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
+
+                  <li><a href="about.html" class="nav__link">About us</a></li>
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="Northindia.html" class="dropdown__link">
+                              <i class=""></i> North India
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="south.html" class="dropdown__link">
+                              <i class=""></i>  South India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="estern.html" class="dropdown__link">
+                              <i class=""></i>  East India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="west2.html" class="dropdown__link">
+                              <i class=""></i>  West India
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+                  
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="nearby.html" class="dropdown__link">
+                              <i class=""></i> Nearby Adventures
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="sunrise.html" class="dropdown__link">
+                              <i class=""></i> Sunrise Journeys
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="arabian.html" class="dropdown__link">
+                              <i class=""></i> Arabian Nights
+                           </a>
+                        </li>
+                        <li>
+                           <a href="euro.html" class="dropdown__link">
+                              <i class=""></i> Euro Wonders
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+                
+  <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+        MUMBAI: GATEWAY TO INDIA'S DREAMS &amp; DELIGHTS</h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="images/victoria.jpg" alt="Chhatrapati Shivaji Maharaj Terminus">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Chhatrapati Shivaji Maharaj Terminus</h1>
+        <div class="main2">
+          The Chhatrapati Shivaji Maharaj Terminus in Mumbai showcases exceptional Victorian Gothic Revival architecture in India, seamlessly integrating themes from traditional Indian architecture. </div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Gateway Of India</h1>
+        <div class="main2">
+          The Gateway of India, an iconic arch on Mumbai's waterfront with views of the Arabian Sea, was constructed in 1924. It stands as a testament to India's colonial heritage and architectural splendor. Beyond its historical importance, the Gateway of India draws tourists for its grandeur and offers harbor boat rides, making it a popular destination for visitors.</div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/gateway.jpg" alt="Gateway of India">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="images/haji ali.jpg" alt="Haji Ali Dargah">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Haji Ali Dargah</h1>
+        <div class="main2">Experience a family-friendly visit to Mumbai's renowned Haji Ali Dargah, home to the tomb of Sayed Peer Haji Ali Shah Bukhari. This impressive monument, crafted from white marble, showcases exquisite Indo-Islamic architecture. A major draw for tourists is its unique location extending into the sea.</div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">Siddhivinayak Temple</h1>
+        <div class="main2">
+          Siddhivinayak is among India's oldest Hindu temples, dedicated to the worship of Lord Ganesha. Established in 1801, the present structure underwent significant renovations in 1993. The idol's throne, adorned with a substantial amount of gold, is a major draw for visitors.</div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/siddhivinayak.jpg" alt="Siddhivinayak Temple">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="images/sealink.jpg" alt="Bandra Worli Sea Link">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Bandra Worli Sea Link</h1>
+        <div class="main2">The Bandra-Worli Sea Link is a prominent landmark in Mumbai. This eight-lane suspension bridge, completed in 2009, links the city's central business district with the western suburbs over the Arabian Sea, easing traffic congestion previously seen on the Mahim Causeway.</div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Ganpatipule Temple</h1>
+        <div class="main2">Ganpatipule, nestled in Ratnagiri district within the Konkan region, boasts expansive beaches ideal for a serene retreat in nature. Visitors can enjoy the unique sight of a beach meeting a river, complemented by a hill resembling Ganpati, the revered Hindu deity.</div>
+         <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/ganpatipule.jpg" alt="Ganpatipule Temple">
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Essel World</h1>
+          <div class="main2">
+            Situated in the picturesque coastal village of Gorai in Mumbai, Essel World stands as one of India's largest amusement parks. For more than twenty years, this destination has been a leader in providing entertainment and leisure to visitors from around the world.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/esselworld.jpg" alt="Essel World">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/sanjaypark.jpg" alt="Sanjay Gandhi National Park">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Sanjay Gandhi National Park</h1>
+          <div class="main2">Formerly called Borivali National Park, Sanjay Gandhi National Park in Mumbai is a favored picnic destination for both locals and tourists. Encompassing approximately 20% of Mumbai’s land area, the park offers nature enthusiasts the chance to enjoy lush landscapes, diverse wildlife, rocky outcrops, caves, and various tourist attractions.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Marine Drive</h1>
+          <div class="main2">
+            Marine Drive, known as the Queen’s Necklace, stands out as a highly recognizable landmark in Mumbai. This curved seaside boulevard along the Arabian Sea in South Mumbai offers ideal opportunities for sunset views, leisurely strolls, and is beloved by locals and tourists alike as a popular hangout spot.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/marinedrive.jpg" alt="Marine Drive">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/prachin.jpg" alt="Prachin Konkan Museum">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Prachin Konkan Museum</h1>
+          <div class="main2">Prachin Konkan is a life-sized museum situated in a large campus that portrays Konkan life from 500 years ago. A guided tour of the museum explores different facets of Konkan life, including social, economic, cultural, and religious aspects. </div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Elephanta Caves</h1>
+          <div class="main2">
+            The Elephanta Caves, situated in Western India on Elephanta Island (also known as Gharapuri Island), consist of two hills separated by a narrow valley. This small island is adorned with numerous ancient archaeological remnants, preserving its vibrant cultural heritage.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/elephanta.jpg" alt="Elephanta Caves">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/kashid.jpg" alt="Alibaug Kashid Beach">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Alibaug Kashid Beach</h1>
+          <div class="main2">Just 125 kilometers from Mumbai and 33 kilometers from Alibaug, Kashid Beach is a sought-after tourist spot in Maharashtra. Known for retaining its natural beauty despite being frequented by many visitors, it features clear blue waters of the Arabian Sea and pristine sandy shores, ideal for a relaxing weekend escape. </div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Sindhudurg</h1>
+          <div class="main2">
+            Sindhudurg Fort is a historic fortress situated on an islet in the Arabian Sea, near Maharashtra's coast in Western India. Located near Malvan town in Sindhudurg District, Konkan region of Maharashtra, it stands as a protected monument, positioned amidst the sea in Malvan.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/sindhudurg.jpg" alt="Sindhudurg">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/matheran.jpg" alt="Matheran">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Matheran</h1>
+          <div class="main2">Matheran is a delight for photographers looking to capture the scenic beauty of this charming hill station. Nestled in the Western Ghats, Matheran is India's tiniest hill station. Visitors enjoy exploring its picturesque landscapes on foot.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside ">
+          <h1 class="main">Murud</h1>
+          <div class="main2">
+            Murud, known for its ancient forts and beautiful golden beaches, provides a glimpse into Maharashtra’s maritime history. The impressive Murud-Janjira Fort, encircled by azure waters, reflects the naval strength of the Marathas. Spend your time exploring historic landmarks, enjoying water activities, or relaxing on Murud’s peaceful coast.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/murud.jpg" alt="Murud">
+        </div>
+      </div>
+      <div class="mini_container">
+  
+        <div class="leftside">
+          <img src="images/malvan.jpg" alt="Malvan">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Malvan</h1>
+          <div class="main2">Malvan, nestled on the untouched Konkan coastline, combines exciting adventures with tranquil scenery. Embark on thrilling scuba diving and snorkeling experiences in the clear waters, visit ancient forts, or relax on the golden shores of its scenic beaches.</div>
+           <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">We believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a> 
+                <a href="about.html"><li>About</li></a> 
+                <a href="Maharashtra.html"><li>Services</li></a>
+                  <a href="contact.html"><li>Contact</li></a> 
+                </ul>
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i> Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fa-envelope"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+</footer>
+<script src="script.js"></script>
+</html>

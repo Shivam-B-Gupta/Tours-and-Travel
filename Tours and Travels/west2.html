@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WEST INDIA</title>
+  <link rel="stylesheet" href="west2.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .nav__menu.active{
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+</style>
+
+<body>
+ 
+  <!DOCTYPE html>
+  <header class="header">
+    <nav class="nav container">
+       <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+             <i class="logo"></i> Explore2Go
+          </a>
+          
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line nav__burger"></i>
+             <i class="ri-close-line nav__close"></i>
+          </div>
+       </div>
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li><a href="index.html" class="nav__link">Home</a></li>
+
+             <li><a href="about.html" class="nav__link">About us</a></li>
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="Northindia.html" class="dropdown__link">
+                         <i class=""></i> North India
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="south.html" class="dropdown__link">
+                         <i class=""></i>  South India
+                      </a>
+                   </li>
+                   <li>
+                      <a href="estern.html" class="dropdown__link">
+                         <i class=""></i>  East India
+                      </a>
+                   </li>
+                   <li>
+                      <a href="west2.html" class="dropdown__link">
+                         <i class=""></i>  West India
+                      </a>
+                   </li>
+                </ul>
+             </li>
+             
+             <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+             
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="nearby.html" class="dropdown__link">
+                         <i class=""></i> Nearby Adventures
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="sunrise.html" class="dropdown__link">
+                         <i class=""></i> Sunrise Journeys
+                      </a>
+                   </li>
+
+                   <li>
+                      <a href="arabian.html" class="dropdown__link">
+                         <i class=""></i> Arabian Nights
+                      </a>
+                   </li>
+                   <li>
+                      <a href="euro.html" class="dropdown__link">
+                         <i class=""></i> Euro Wonders
+                      </a>
+                   </li>
+                </ul>
+             </li>
+
+             <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+          </ul>
+       </div>
+    </nav>
+ </header>
+
+
+                
+  <script type="text/javascript">
+
+    let menu = document.querySelectorAll('#burgericon');
+    let close = document.querySelectorAll('#close-icon');
+    let main = document.querySelectorAll('#nav-menu');
+
+    menu.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+
+    close.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+   
+
+
+
+
+
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+       WEST INDIA: ANCIENT MYSTERIES &amp; MODERN MARVELS</h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="images/naval-aviation-museum-goa.jpg" alt="UAE">
+      </div>
+      <div class="rightside">
+        <h1 class="main"> Indian Naval Aviation Museum</h1>
+        <div class="main2">
+            Dive into history at the Indian Naval Aviation Museum. Discover vintage
+            aircraft, naval artifacts, and fascinating exhibits showcasing India's naval aviation
+            journey. Perfect for aviation enthusiasts and curious travelers alike!</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Baga Beach</h1>
+        <div class="main2">
+            >Baga Beach in Goa is a lively destination known for its golden sands,
+            vibrant nightlife, and water sports. Enjoy parasailing, beachside dining, and bustling
+            markets. Baga Beach offers the perfect mix of relaxation and excitement for travelers
+            seeking a fun-filled beach getaway</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/Baga Beach.jpg" alt="Egypt">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="images/palolem-beach-.jpg" alt="Turkey">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Palolem Beach</h1>
+        <div class="main2">Palolem Beach in Goa is a serene and picturesque spot known for its crescent-shaped
+            shoreline and calm waters. Ideal for swimming, kayaking, and beachside yoga, it offers a
+            tranquil escape. Palolem Beach is perfect for those seeking a peaceful and scenic beach
+            experience..</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">Deltin Royal</h1>
+        <div class="main2">
+            Deltin Royale in Goa is India's largest luxury casino, offering an
+                                exciting blend of gaming, live entertainment, and fine dining. Set on a cruise ship, it
+                                provides a glamorous and thrilling experience. Perfect for those seeking nightlife and
+                                adventure on the waters of Goa.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/Deltin Royale.jpg" alt="Jordan">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="images/Gateway Of India.jpg" alt="Qatar">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Gateway of India</h1>
+        <div class="main2">The Gateway of India in Mumbai is an iconic monument overlooking
+            the Arabian Sea, known for its grandeur and historical significance. It offers
+            stunning views, boat rides to Elephanta Caves, and nearby bustling markets. The
+            Gateway of India is a must-visit for tourists exploring Mumbai's vibrant culture
+            and heritage.
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Sanjay Gandhi National Park</h1>
+        <div class="main2">National Park in Mumbai is a sprawling urban
+            wilderness known for its rich biodiversity and tranquil surroundings. Explore
+            dense forests, ancient caves, and enjoy wildlife safaris. The park offers a
+            refreshing escape into nature, ideal for nature enthusiasts and families looking
+            for outdoor adventures in Mumbai.
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/Sanjay Gandhi National Park.webp" alt="Morocco">
+      </div>
+    </div>
+    <div class="mini_container">
+
+        <div class="leftside">
+          <img src="images/Mahabaleshwar.jpg" alt="Saudi Arabia">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Mahabaleshwar</h1>
+          <div class="main2">Mahabaleshwar, nestled in the Western Ghats, is a picturesque
+            hill station known for its lush green valleys, scenic viewpoints, and pleasant
+            weather. Explore strawberry farms, enjoy boating in Venna Lake, and visit
+            historic temples. Mahabaleshwar offers a refreshing retreat for nature lovers
+            and those seeking tranquility amidst stunning landscapes.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">Ellora Caves</h1>
+          <div class="main2">Ellora Caves near Aurangabad are a UNESCO World Heritage site
+            renowned for their ancient rock-cut temples and monasteries. Visitors can
+            explore stunning sculptures and intricate architecture carved into the rock
+            faces. Ellora offers a fascinating journey through India's rich history and
+            religious artistry, making it a must-visit for history buffs and cultural
+            enthusiasts alike.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/Ellora-caves.jpg" alt="Bahrain">
+        </div>
+      </div>
+   
+
+      <div class="mini_container">
+
+        <div class="leftside">
+          <img src="images/Statue Of Unity.jpg" alt="Saudi Arabia">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Statue of Unity</h1>
+          <div class="main2">The Statue of Unity in Gujarat is the world's tallest statue,
+            standing at 182 meters. It pays tribute to Sardar Vallabhbhai Patel, India's
+            first Deputy Prime Minister and a key figure in the country's independence
+            movement. Visitors can admire panoramic views from the observation deck and
+            learn about Patel's legacy through exhibitions. The Statue of Unity offers a
+            monumental experience celebrating unity, pride, and India's rich history.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">Surat</h1>
+          <div class="main2">Surat, located in Gujarat, is a vibrant city known for its
+            historical landmarks, bustling markets, and delicious street food. Explore
+            ancient forts, shop for textiles and diamonds, and indulge in local culinary
+            delights. Surat offers a blend of culture, history, and gastronomy, making it an
+            exciting destination for travelers seeking a taste of Gujarat's charm.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/Surat.jpg" alt="Bahrain">
+        </div>
+      </div>
+
+      <div class="mini_container">
+
+        <div class="leftside">
+          <img src="images/Shree Dwarkadhish Temple.webp" alt="Saudi Arabia">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Shree Dwarkadhish Temple</h1>
+          <div class="main2">The Shree Dwarkadhish Temple in Dwarka, Gujarat, is a revered
+            Hindu pilgrimage site dedicated to Lord Krishna. It is known for its grand
+            architecture, intricate carvings, and spiritual significance. Visitors
+            experience devotional rituals, serene ambiance, and a glimpse into ancient
+            mythology. The temple offers a profound spiritual journey and cultural immersion
+            for devotees and tourists alike.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">Laxmi Vilas Palace</h1>
+          <div class="main2">The Laxmi Vilas Palace in Vadodara, Gujarat, is an opulent royal
+            residence and one of the largest palaces in India. Visitors can admire its
+            majestic architecture, expansive gardens, and exquisite interiors showcasing
+            royal artifacts and artwork. The palace offers a glimpse into India's regal
+            history and grandeur, making it a must-visit for tourists interested in
+            architectural marvels and cultural heritage.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/Laxmi Vilas Palace.jpg" alt="Bahrain">
+        </div>
+      </div>
+
+      <div class="mini_container">
+
+        <div class="leftside">
+          <img src="images/Ranthambore National Parl.jpg" alt="Saudi Arabia">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Ranthambore National Park</h1>
+          <div class="main2">National Park in Rajasthan is a renowned wildlife
+            sanctuary known for its majestic tigers and diverse flora and fauna. Visitors
+            can enjoy thrilling safaris, spot exotic wildlife, and explore ancient ruins
+            within the park. Ranthambore offers a thrilling adventure into the heart of
+            India's wilderness, perfect for nature enthusiasts and wildlife lovers.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">Hawa Mahal</h1>
+          <div class="main2">Hawa Mahal in Jaipur, Rajasthan, is a stunning palace known for
+            its unique honeycomb-like structure and intricate windows. It was built for
+            royal women to observe street festivals unnoticed. Visitors can admire its
+            ornate facade, learn about its historical significance, and enjoy panoramic
+            views of Jaipur. Hawa Mahal offers a glimpse into Rajasthan's royal heritage and
+            architectural splendor, making it a must-visit for travelers exploring Jaipur.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/Hawa Mahal.jpg" alt="Bahrain">
+        </div>
+      </div>
+
+      <div class="mini_container">
+
+        <div class="leftside">
+          <img src="images/Jaisalmer Fort.jpg" alt="Saudi Arabia">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Jaisalmer Fort</h1>
+          <div class="main2">Jaisalmer Fort in Rajasthan is a mesmerizing sandstone citadel
+            rising majestically from the Thar Desert. Explore its narrow lanes, ancient
+            temples, and vibrant markets selling handicrafts. The fort offers panoramic
+            views of the desert landscape and a glimpse into Rajasthan's rich history and
+            architectural grandeur, making it a must-visit for travelers seeking a unique
+            cultural experience.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">Udaipur</h1>
+          <div class="main2">Udaipur, often called the "City of Lakes," is a romantic
+            destination in Rajasthan known for its palaces, serene lakes, and vibrant
+            culture. Explore majestic palaces like the City Palace, enjoy boat rides on Lake
+            Pichola, and stroll through colorful markets. Udaipur offers a perfect blend of
+            history, architecture, and natural beauty, making it a must-visit for travelers
+            seeking a royal and picturesque experience in India.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/Udaipur.jpg" alt="Bahrain">
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">We believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="Maharashtra.html"><li>Services</li></a>
+                    <a href="contact.html" class="heading-link">
+                   <li>Contact</li>
+                  </a>
+                </ul>
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i> Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fa-envelope"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <<div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+</footer>
+<script src="West2.js"></script>
+</html>

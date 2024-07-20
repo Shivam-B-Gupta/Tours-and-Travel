@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOUTH INDIA</title>
+  <link rel="stylesheet" href="south.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .nav__menu.active{
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+</style>
+
+<body>
+ 
+  <!DOCTYPE html>
+  <header class="header">
+    <nav class="nav container">
+       <div class="nav__data">
+          <a href="home.html" class="nav__logo">
+             <i class="logo"></i> Explore2Go
+          </a>
+          
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line nav__burger"></i>
+             <i class="ri-close-line nav__close"></i>
+          </div>
+       </div>
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li><a href="index.html" class="nav__link">Home</a></li>
+
+             <li><a href="about.html" class="nav__link">About us</a></li>
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="Northindia.html" class="dropdown__link">
+                         <i class=""></i> North India
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="south.html" class="dropdown__link">
+                         <i class=""></i>  South India
+                      </a>
+                   </li>
+                   <li>
+                      <a href="estern.html" class="dropdown__link">
+                         <i class=""></i>  East India
+                      </a>
+                   </li>
+                   <li>
+                      <a href="west2.html" class="dropdown__link">
+                         <i class=""></i>  West India
+                      </a>
+                   </li>
+                </ul>
+             </li>
+             
+             <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+             
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="nearby.html" class="dropdown__link">
+                         <i class=""></i> Nearby Adventures
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="sunrise.html" class="dropdown__link">
+                         <i class=""></i> Sunrise Journeys
+                      </a>
+                   </li>
+
+                   <li>
+                      <a href="arabian.html" class="dropdown__link">
+                         <i class=""></i> Arabian Nights
+                      </a>
+                   </li>
+                   <li>
+                      <a href="euro.html" class="dropdown__link">
+                         <i class=""></i> Euro Wonders
+                      </a>
+                   </li>
+                </ul>
+             </li>
+
+             <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+          </ul>
+       </div>
+    </nav>
+ </header>
+
+
+                
+  <script type="text/javascript">
+
+    let menu = document.querySelectorAll('#burgericon');
+    let close = document.querySelectorAll('#close-icon');
+    let main = document.querySelectorAll('#nav-menu');
+
+    menu.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+
+    close.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+   
+
+
+
+
+
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+        DISCOVER THE WONDERS OF SOUTHERN INDIA</h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="Images/tirupati.jpg" alt="TIRUPATI">
+      </div>
+      <div class="rightside">
+        <h1 class="main">TIRUPATI</h1>
+        <div class="main2">
+            Tirupati, situated in Andhra Pradesh, India, is renowned for the Tirumala Venkateswara Temple atop the Tirumala Hills. Dedicated to Lord Venkateswara, this temple is one of the most visited religious sites globally, drawing millions of pilgrims annually for its spiritual significance and architectural grandeur. Surrounding Tirupati are cultural and natural gems, including the historic Chandragiri Fort, the rich biodiversity of Sri Venkateswara National Park, and the tranquil Papavinasam Teertham waterfall. The city itself offers bustling markets and educational institutions, providing a blend of spiritual retreat and cultural exploration for visitors to experience the essence of South Indian heritage and natural beauty.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">VISHAKAPATNAM</h1>
+        <div class="main2">
+            Visakhapatnam (Vizag), situated on the eastern coast of Andhra Pradesh, India, is celebrated for its stunning beaches such as R.K. Beach and the pristine shores of Rushikonda. As a prominent port city, Vizag boasts a rich cultural heritage and scenic landscapes. Visitors can explore attractions like the iconic Dolphin's Nose viewpoint, offering panoramic views of the Bay of Bengal, and the Submarine Museum, showcasing maritime history.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="Images/vishakapatnam.jpg" alt="vishakapatnam">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="Images/KURNOOL.jpg" alt="KURNOOL">
+      </div>
+      <div class="rightside">
+        <h1 class="main">KURNOOL</h1>
+        <div class="main2">Kurnool, located in the heart of Andhra Pradesh, India, is renowned for its historical and cultural significance. The city offers a glimpse into its rich past through attractions like the ancient Konda Reddy Fort and the sacred shrine of Peta Anjaneyaswami. Nature enthusiasts can explore the ethereal beauty of Oravakallu Rock Garden and Belum Caves, one of the longest cave systems in India. Kurnool is also known for its tranquil sanctuaries like Rollapadu Bird Sanctuary, home to diverse avian species.</div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">BANGALORE PALACE</h1>
+        <div class="main2">
+            Bangalore Palace is a majestic symbol of Karnataka's royal history. Built in the Tudor-style architecture in 1887, it features fortified towers, arches, and exquisite interiors with intricate woodwork and stained glass windows. Surrounded by beautiful gardens, the palace offers visitors a glimpse into the opulent lifestyle of the Maharajas of Mysore.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="Images/Bangalore_palace.jpg" alt="Bangalore_palace">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="Images/Hampi.jpg" alt="Hampi">
+      </div>
+      <div class="rightside">
+        <h1 class="main">HAMPI</h1>
+        <div class="main2">Hampi, a UNESCO World Heritage Site in Karnataka, India, is a mesmerizing blend of history and architecture. It was once the majestic capital of the Vijayanagara Empire, flourishing between the 14th and 16th centuries. Hampi is famed for its sprawling ruins, ancient temples, and impressive monuments like the Virupaksha Temple and the iconic stone chariot at the Vittala Temple complex.
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">GOKARNA</h1>
+        <div class="main2">Gokarna, located in Karnataka, India, is a serene coastal town renowned for its pristine beaches and spiritual significance. It is often referred to as a more laid-back alternative to Goa. Gokarna's main attractions include Om Beach, known for its distinctive shape resembling the auspicious symbol 'Om', and Kudle Beach, offering stunning sunset views.
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="Images/gokarna.jpg" alt="gokarna">
+      </div>
+    </div>
+    <div class="mini_container">
+
+        <div class="leftside">
+          <img src="Images/kerala backwater.jpg" alt="kerala backwater1">
+        </div>
+        <div class="rightside">
+          <h1 class="main">KERALA BACKWATER</h1>
+          <div class="main2">Kerala Backwaters, a unique network of serene lagoons, lakes, and canals along the Arabian Sea coast, is a quintessential destination in Kerala, India. This picturesque region is renowned for its tranquil houseboat cruises, offering visitors an immersive experience through lush landscapes, quaint villages, and coconut groves. 
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">MUNNAR</h1>
+          <div class="main2">Munnar, located in the Western Ghats of Kerala, India, is a charming hill station known for its lush tea gardens, rolling hills, and pleasant climate. At an elevation of around 1,600 meters, Munnar offers breathtaking views and a tranquil atmosphere. Key attractions include the picturesque tea plantations, Eravikulam National Park home to the endangered Nilgiri Tahr, and the serene Mattupetty Dam. Adventure seekers can enjoy trekking and paragliding, while nature lovers can explore the diverse flora and fauna.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="Images/munnar.jpg" alt="munnar">
+        </div>
+      </div>
+   
+      <div class="mini_container">
+
+        <div class="leftside">
+          <img src="Images/Thekkady.jpg" alt="Thekkady">
+        </div>
+        <div class="rightside">
+          <h1 class="main">THEKKADY</h1>
+          <div class="main2">Thekkady, located in Kerala, India, is a nature lover's paradise known for its lush greenery and wildlife. The main attraction is the Periyar Wildlife Sanctuary, where visitors can enjoy boat safaris on Periyar Lake, spotting elephants, tigers, and various bird species. Thekkady also offers spice plantations, providing a glimpse into Kerala's spice trade heritage.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">CHENNAI</h1>
+          <div class="main2">Chennai, the capital of Tamil Nadu, India, is a vibrant city known for its rich cultural heritage and bustling urban life. Marina Beach, one of the longest urban beaches in the world, is a major attraction, offering stunning sunrise views and lively evening strolls. The historic Fort St. George, now a museum, provides insights into the city's colonial past.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="Images/chennai.webp" alt="chennai">
+        </div>
+      </div>
+
+      <div class="mini_container">
+
+        <div class="leftside">
+          <img src="Images/ooty.webp" alt="ooty">
+        </div>
+        <div class="rightside">
+          <h1 class="main">OOTY</h1>
+          <div class="main2">Ooty, also known as Udhagamandalam, is a charming hill station in Tamil Nadu, India, renowned for its cool climate and scenic beauty. Nestled in the Nilgiri Hills, Ooty is famous for its lush tea gardens, picturesque landscapes, and the beautiful Ooty Lake, perfect for boating. The Nilgiri Mountain Railway, a UNESCO World Heritage site, offers a delightful train journey through stunning vistas.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">COIMBATORE</h1>
+          <div class="main2">Coimbatore, known as the "Manchester of South India," is a bustling city in Tamil Nadu, India, renowned for its textile industry and pleasant climate. Key attractions include the Marudamalai Temple, perched on a scenic hill, and the serene Vydehi Falls. The Gass Forest Museum offers insights into the region's biodiversity, while the GeDee Car Museum showcases an impressive collection of vintage automobiles.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="Images/coimbatore.jpeg" alt="coimbatore">
+        </div>
+      </div>
+
+      <div class="mini_container">
+      <div class="leftside">
+        <img src="Images/hyderabad.jpg" alt="hyderabad">
+      </div>
+      <div class="rightside">
+        <h1 class="main">HYDERABAD</h1>
+        <div class="main2">Hyderabad, the capital of Telangana, India, is a city rich in history and culture. It is famous for the iconic Charminar, a 16th-century mosque with four grand arches. The historic Golconda Fort offers panoramic views and a glimpse into the city's regal past. The opulent Chowmahalla Palace and the stunning architecture of the Qutb Shahi Tombs reflect Hyderabad's royal heritage.
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+
+
+
+    <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">WARANGAL</h1>
+          <div class="main2">Warangal, located in Telangana, India, is a city steeped in history and architectural beauty. The Warangal Fort, with its impressive stone gateways (Kakatiya Kala Thoranam) and intricate carvings, showcases the grandeur of the Kakatiya dynasty.Nearby, the Ramappa Temple, a UNESCO World Heritage site, stands as a testament to exquisite Kakatiya craftsmanship. </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="Images/warangal.jpeg" alt="warangal">
+        </div>
+      </div>
+
+
+      <div class="mini_container">
+        <div class="leftside">
+          <img src="Images/nizamabad.jpg" alt="nizamabad">
+        </div>
+        <div class="rightside">
+          <h1 class="main">NIZAMABAD</h1>
+          <div class="main2">Nizamabad, located in Telangana, India, is a city known for its rich history and cultural heritage. A key attraction is the Nizamabad Fort, offering panoramic views and a glimpse into the region's past. The ancient Dichpally Ramalayam, often called the Khajuraho of Nizamabad, is renowned for its intricate stone carvings. The serene Pocharam Wildlife Sanctuary, with its diverse flora and fauna, is a haven for nature enthusiasts.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+  
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">MINICOY</h1>
+          <div class="main2">Minicoy Island, part of the Lakshadweep archipelago in India, is renowned for its stunning coral reefs and crystal-clear waters. It offers a perfect tropical getaway with its pristine white sandy beaches and vibrant marine life. Visitors can indulge in activities like snorkeling, diving, and glass-bottom boat rides to explore the rich underwater world.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="Images/minicoy.jpg" alt="Minicoy">
+        </div>
+      </div>
+
+
+      <div class="mini_container">
+        <div class="leftside">
+          <img src="Images/scuba diving.webp" alt="scuba diving in lakshwadeep">
+        </div>
+        <div class="rightside">
+          <h1 class="main">SCUBA DIVING</h1>
+          <div class="main2">Scuba Diving in Lakshadweep is one of the most popular activities amongst travellers. Agatti, Bangaram and Kadmat islands are the three islands that prove a perfect setting for the Scuba.The pristine marine environment and relatively untouched coral reefs make scuba diving in Lakshadweep a unique and memorable experience.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+
+
+
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">PROMENADE BEACH</h1>
+          <div class="main2">Promenade Beach, also known as Pondicherry Beach, is a prominent attraction in Puducherry (Pondicherry), India. Stretching along the city's waterfront, it offers picturesque views of the Bay of Bengal and is famous for its serene ambiance and refreshing sea breeze. The beach is lined with palm trees and vibrant cafes, making it ideal for leisurely walks and relaxation.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="Images/promenade.jpg" alt="promenade">
+        </div>
+      </div>
+
+      <div class="mini_container">
+        <div class="leftside">
+          <img src="Images/auroville.jpg" alt="auroville">
+        </div>
+        <div class="rightside">
+          <h1 class="main">AUROVILLE</h1>
+          <div class="main2">Auroville, located near Puducherry (Pondicherry), India, is an experimental township promoting peace, sustainability, and spiritual unity. Founded in 1968 by Mirra Alfassa (The Mother) and designed by architect Roger Anger, Auroville aims to be a universal town where people from around the world live in harmony.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+
+
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">PARADISE BEACH</h1>
+          <div class="main2">Paradise Beach, located in Puducherry (Pondicherry), India, is a serene and secluded destination accessible by boat from Chunnambar Boat House. Known for its pristine white sands, clear blue waters, and lush greenery, Paradise Beach offers a perfect escape into nature. Visitors can indulge in activities like sunbathing, swimming, and beach games in a tranquil environment away from the hustle and bustle of the city.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="Images/paradise beach.jpg" alt="paradise">
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">We believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="Maharashtra.html"><li>Services</li></a>
+                    <a href="contact.html" class="heading-link">
+                   <li>Contact</li>
+                  </a>
+                </ul>
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i>  Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fas fa-phone"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+  <script src="south.js"></script>
+</footer>
+</html>

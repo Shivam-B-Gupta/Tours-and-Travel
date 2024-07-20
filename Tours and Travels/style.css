@@ -1,0 +1,242 @@
+body::before {
+  background: url(images/img3.jpg) no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 125%;
+  z-index: -1;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+  font-family: "Poppins", sans-serif;
+  /* background: url(Explore\ 2\ go.png) no-repeat center/cover; */
+}
+
+/* .body{ 
+  /* background-image: url(Explore\ 2\ go.png)no-repeat center; */
+
+*/ .contact-section {
+  background-image: url(images/naini\ lake1.jpg) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+  text-align: center;
+    /* min-height: 100v
+  h; */
+  /* Center align content inside contact-section */
+}
+.logo-border-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust margin as needed to separate logo from header */
+}
+
+.logo {
+  margin-bottom: 0px; /* Adjust margin as needed to separate logo from header */
+}
+
+.logo img {
+  width: 200px; /* Set the width of the logo */
+  height: auto;
+}
+
+.outfit-header {
+  margin-top: 10px; /* Reduce margin between logo and header */
+  color: #070707;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400; /* Adjust the font weight as needed */
+  font-size: 70px;
+  text-align: center;
+}
+
+.border {
+  width: 100px;
+  height: 10px;
+  background: #000000;
+  margin: 20px auto; /* Reduce margin above and below the border */
+}
+
+.contact-form {
+  max-width: 611px;
+  margin: auto;
+  padding: 20px; /* Adjust padding to create space around the form elements */
+  background: rgba(3, 3, 3, 0.8); /* Transparent background using rgba */
+  border-radius: 13px; /* Rounded corners for the form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Box shadow for a subtle effect */
+  margin-top: 0px;
+}
+
+.contact-form-text {
+  display: block;
+  width: calc(
+    100% - 50px
+  ); /* Adjust width to accommodate padding and borders */
+  box-sizing: border-box;
+  margin-left: 28px;
+  margin-top: 20px;
+  border: 30px;
+  background: #b5d5e3;
+  padding: 20px;
+  outline: none;
+  color: #000000;
+  transition: 0.5s;
+  border-radius: 13px;
+}
+
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #488da0;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-btn {
+  width: 45%; /* Make the button fill the entire width of the form */
+  border: 0;
+  background: #488da0;
+  color: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 20px;
+  margin-left: 25%;
+  margin-right: 20%;
+}
+
+.contact-form-btn:hover {
+  background: #488da0;
+}
+footer {
+  width: 100%;
+  /* height: auto; */
+  background: #282828;
+  padding-bottom: 20px;
+}
+
+/* .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+} */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.square {
+  width: 100%;
+  height: auto;
+  margin: 10px 30px;
+  padding: 0px !important;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.brand {
+  margin-top: 20px;
+  font-size: 38px;
+  color: rgba(200, 100, 0, 0.5);
+  font-weight: bold;
+}
+
+.about {
+  width: 85%;
+  color: white;
+  margin-top: 5px;
+  text-align: justify;
+  margin-left: 40px;
+}
+
+.heading {
+  margin-top: 20px;
+  font-size: 38px;
+  color: rgba(200, 100, 0, 0.5);
+  font-weight: bold;
+  text-align: center;
+}
+
+.p-list {
+  padding: 0;
+}
+
+.p-list li {
+  display: block;
+  text-align: center;
+  margin: 5px 0px;
+  color: white;
+}
+
+.l-list {
+  padding: 0;
+}
+
+.l-list li {
+  display: block;
+  text-align: center;
+  margin: 5px 0px;
+  color: white;
+}
+
+.contact {
+  padding: 0;
+}
+
+.contact li {
+  display: block;
+  text-align: center;
+  margin: 5px 0px;
+  color: white;
+}
+
+.social-media {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media li {
+  display: inline-flex;
+  color: white;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.copy {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .heading {
+    text-align: left;
+  }
+  .square {
+    padding: 0px 30px !important;
+    margin-top: 10px !important;
+  }
+
+  .p-list li,
+  .l-list li,
+  .contact li {
+    text-align: left;
+  }
+  .social-media {
+    padding-left: 0 !important;
+  }
+
+  .social-media li {
+    margin: 5px;
+  }
+}

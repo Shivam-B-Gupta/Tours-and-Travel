@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the top tourist destinations in Maharashtra. Discover amazing places to visit, from Mumbai to the beaches of Konkan. Plan your perfect trip with our travel guides.">
+  <title>Maharashtra Tourism - Best Places to Visit in Maharashtra</title>
+  <link rel="stylesheet" href="Maharashtra.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+</style>
+
+<body>
+ 
+      <header class="header">
+         <nav class="nav container">
+            <div class="nav__data">
+               <a href="index.html" class="nav__logo">
+                  <i class="logo"></i> Explore2Go
+               </a>
+               
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line nav__burger"></i>
+                  <i class="ri-close-line nav__close"></i>
+               </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li><a href="index.html" class="nav__link">Home</a></li>
+
+                  <li><a href="about.html" class="nav__link">About us</a></li>
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="Northindia.html" class="dropdown__link">
+                              <i class=""></i> North India
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="south.html" class="dropdown__link">
+                              <i class=""></i>  South India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="estern.html" class="dropdown__link">
+                              <i class=""></i>  East India
+                           </a>
+                        </li>
+                        <li>
+                           <a href="west2.html" class="dropdown__link">
+                              <i class=""></i>  West India
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  
+                  <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+                  
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
+
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="nearby.html" class="dropdown__link">
+                              <i class=""></i> Nearby Adventures
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="sunrise.html" class="dropdown__link">
+                              <i class=""></i> Sunrise Journeys
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="arabian.html" class="dropdown__link">
+                              <i class=""></i> Arabian Nights
+                           </a>
+                        </li>
+                        <li>
+                           <a href="euro.html" class="dropdown__link">
+                              <i class=""></i> Euro Wonders
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+                
+  <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+        MAHARASHTRA: A STATE OF HERITAGE AND DIVERSITY</h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class="data_content">Maharashtra, a state brimming with history and diversity, offers a rich tapestry of cultural and natural attractions for tourists. Experience the bustling city of Mumbai, renowned for its iconic landmarks and Bollywood glamour. Discover the serene beaches of Konkan and the lush Western Ghats. Explore the ancient Ajanta and Ellora caves, admire the grandeur of hill forts such as Raigad and Sinhagad, and immerse yourself in the spiritual ambiance of Shirdi and Nashik. Indulge in Maharashtra’s delectable cuisine, vibrant festivals, and warm hospitality for an unforgettable travel experience. Plan your Maharashtra tour today!<br>
+      <br>
+      Maharashtra is a treasure trove of diverse experiences, with each city offering its unique charm. Pune, known as the 'Oxford of the East,' combines educational excellence with historical landmarks and a vibrant cultural scene. Amravati, rich in cultural heritage, features ancient temples and lush parks. Nashik, famous for its vineyards and spiritual significance, invites visitors to serene temples and scenic landscapes. Mumbai, the bustling 'City of Dreams,' enthralls with iconic landmarks, lively street life, and Bollywood allure. Sambhajinagar, steeped in history and architectural splendor, is home to the UNESCO World Heritage Sites of Ajanta and Ellora. Nagpur, the 'Orange City,' blends industrial growth with natural beauty, renowned for its juicy oranges and historical landmarks. These cities collectively showcase Maharashtra's rich heritage, cultural diversity, and natural wonders, making it a must-visit destination. Explore Maharashtra today!
+      <br>
+    <br>
+      Here Are Some Must-See Marvels Awaiting Your Discovery:</div>
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="images/pune.jpg" alt="Pune">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Pune</h1>
+        <div class="main2">
+          Pune, often referred to as the 'Oxford of the East,' offers a unique blend of history and culture in Maharashtra, India. Visitors can discover ancient forts, peaceful temples, and lively markets. The city is also known for its vibrant arts scene and delicious cuisine, making it a must-visit destination for tourists.</div>
+        <button onclick="window.location.href='Pune.html'">Discover More</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Mumbai</h1>
+        <div class="main2">
+          Mumbai, known as the 'City of Dreams,' is India's financial hub and a cultural melting pot. Tourists can explore iconic landmarks like the Gateway of India, enjoy the vibrant nightlife, and savor the diverse street food, all with the stunning Arabian Sea as a backdrop.</div>
+        <button onclick="window.location.href='mumbai.html'">Discover More</button>
+      </div>
+      <div class="rightside">
+        <img src="images/mumbai.jpg" alt="Mumbai">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="images/nashik.jpg" alt="Nashik">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Nashik</h1>
+        <div class="main2">Nashik, located in Maharashtra, is famous for its ancient temples, thriving vineyards, and importance as a major pilgrimage site in India. Visitors can experience the spiritual atmosphere of the Kumbh Mela, taste world-class wines at local wineries, and enjoy the beautiful surrounding landscapes.</div>
+        <button onclick="window.location.href='nashik.html'">Discover More</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">Sambhajinagar</h1>
+        <div class="main2">
+          Sambhajinagar, rich in history and architectural beauty, is renowned for its UNESCO World Heritage Sites and cultural heritage in Maharashtra, India. Tourists can marvel at the detailed carvings of the Ajanta and Ellora Caves, explore grand forts, and experience the city's vibrant festivals and traditions.</div>
+        <button onclick="window.location.href='sambhajinagar.html'">Discover More</button>
+      </div>
+      <div class="rightside">
+        <img src="images/aurangabad.jpg" alt="Sambhajinagar">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="images/Nagpur.jpg" alt="Nagpur">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Nagpur</h1>
+        <div class="main2">Nagpur, the 'Orange City' of Maharashtra, combines cultural heritage with industrial growth and is famous for its juicy oranges and vibrant festivals. Visitors can explore historic landmarks like Deekshabhoomi, enjoy scenic spots like Ambazari Lake, and experience the city's lively cultural events.</div>
+        <button onclick="window.location.href='nagpur.html'">Discover More</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Amravati</h1>
+        <div class="main2">Amravati, a culturally rich city in Maharashtra, India, offers visitors a chance to explore ancient temples, scenic parks, and significant historical sites. Known for its warm hospitality and vibrant traditions, Amravati is a must-visit destination for anyone looking to experience the best of Indian heritage.</div>
+        <button onclick="window.location.href='amravati.html'">Discover More</button>
+      </div>
+      <div class="rightside">
+        <img src="images/amravati.jpg" alt="Amravati">
+      </div>
+    </div>
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">We believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a> 
+                <a href="about.html"><li>About</li></a> 
+                <a href="Maharashtra.html"><li>Services</li></a>
+                   <a href="contact.html"><li>Contact</li></a> 
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i>  Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fa-envelope"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+</footer>
+<script src="script.js"></script>
+</html>

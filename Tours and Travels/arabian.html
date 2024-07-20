@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the enchanting world of Arabian tours with our comprehensive travel guide. Explore top destinations, cultural experiences, and unique attractions across the Middle East. Plan your unforgettable Arabian adventure today!">
+  <title>Explore Arabian Tours: Uncover the Mysteries of the Middle East</title>
+  <link rel="stylesheet" href="arabian.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  button:disabled {
+    pointer-events: none;
+  }
+
+  button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  .nav__menu.active{
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+  }
+
+
+</style>
+
+<body>
+ 
+  <!DOCTYPE html>
+  <header class="header">
+    <nav class="nav container">
+       <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+             <i class="logo"></i> Explore2Go
+          </a>
+          
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line nav__burger"></i>
+             <i class="ri-close-line nav__close"></i>
+          </div>
+       </div>
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li><a href="index.html" class="nav__link">Home</a></li>
+
+             <li><a href="about.html" class="nav__link">About us</a></li>
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="Northindia.html" class="dropdown__link">
+                         <i class=""></i> North India
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="south.html" class="dropdown__link">
+                         <i class=""></i>  South India
+                      </a>
+                   </li>
+                   <li>
+                      <a href="estern.html" class="dropdown__link">
+                         <i class=""></i>  East India
+                      </a>
+                   </li>
+                   <li>
+                      <a href="west2.html" class="dropdown__link">
+                         <i class=""></i>  West India
+                      </a>
+                   </li>
+                </ul>
+             </li>
+             
+             <li><a href="Maharashtra.html" class="nav__link">Maharashtra</a></li>
+
+             
+             <li class="dropdown__item">
+                <div class="nav__link">
+                   Beyond India <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </div>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="nearby.html" class="dropdown__link">
+                         <i class=""></i> Nearby Adventures
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="sunrise.html" class="dropdown__link">
+                         <i class=""></i> Sunrise Journeys
+                      </a>
+                   </li>
+
+                   <li>
+                      <a href="arabian.html" class="dropdown__link">
+                         <i class=""></i> Arabian Nights
+                      </a>
+                   </li>
+                   <li>
+                      <a href="euro.html" class="dropdown__link">
+                         <i class=""></i> Euro Wonders
+                      </a>
+                   </li>
+                </ul>
+             </li>
+
+             <li><a href="contact.html" class="nav__link">Contact Us</a></li>
+          </ul>
+       </div>
+    </nav>
+ </header>
+
+
+                
+  <script type="text/javascript">
+
+    let menu = document.querySelectorAll('#burgericon');
+    let close = document.querySelectorAll('#close-icon');
+    let main = document.querySelectorAll('#nav-menu');
+
+    menu.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+
+    close.addEventListener('click', () => {
+      main.classList.toggle('active');
+    })
+   
+
+
+
+
+
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+  <section class="Hero">
+    <div class="banner">
+      <h1>
+        ARABIAN NIGHTS: ANCIENT MYSTERIES &amp; MODERN MARVELS</h1>
+    </div>
+  </section>
+
+  <!-- <div class="overlapping-box"> -->
+  <div class="container3">
+    <div class=" mini_container">
+      <div class="leftside">
+        <img src="images/UAE.jpg" alt="UAE">
+      </div>
+      <div class="rightside">
+        <h1 class="main">United Arab Emirates [UAE]</h1>
+        <div class="main2">
+          The United Arab Emirates (UAE) seamlessly combines tradition with modernity, featuring iconic landmarks such as Dubai's Burj Khalifa, Abu Dhabi's Sheikh Zayed Grand Mosque, and Sharjah's rich cultural heritage. Experience a blend of luxury shopping, thrilling desert safaris, and top-notch entertainment. With its impressive skyscrapers, traditional souks, and warm Arabian hospitality, the UAE offers an unforgettable travel experience full of contrasts and elegance.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Egypt</h1>
+        <div class="main2">
+          Egypt, famed for its ancient wonders and enduring enigmas, enchants visitors with iconic sites such as the Pyramids of Giza, the Sphinx, and the temples of Luxor. Discover the vibrant markets of Cairo, embark on a scenic Nile River cruise, and explore lively bazaars. With its deep historical roots, remarkable archaeological treasures, and welcoming hospitality, Egypt offers an unforgettable journey through historical grandeur and cultural richness.</div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/egypt.jpg" alt="Egypt">
+      </div>
+    </div>
+    <div class=" mini_container">
+
+      <div class="leftside">
+        <img src="images/turkey.jpg" alt="Turkey">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Turkey</h1>
+        <div class="main2">Turkey, a crossroads of continents rich in history and vibrant culture, features iconic landmarks such as Istanbul's Hagia Sophia, the fairy chimneys of Cappadocia, and the ancient ruins of Ephesus. Savor exquisite Turkish cuisine, wander through lively bazaars, and unwind on beautiful Mediterranean beaches. Combining ancient marvels with modern pleasures, Turkey offers an enchanting travel experience through diverse landscapes and a rich heritage.        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside ">
+        <h1 class="main">Jordan</h1>
+        <div class="main2">
+          Jordan, renowned for its ancient wonders and stunning natural beauty, enchants visitors with iconic sites like Petra's rose-red city, the Roman ruins of Jerash, and the dramatic desert vistas of Wadi Rum. Enjoy the therapeutic waters of the Dead Sea, experience the warm hospitality of the Bedouin, and explore the historical citadel of Amman. With its deep cultural heritage and breathtaking landscapes, Jordan offers an unforgettable journey filled with history and adventure.
+
+
+
+        </div>
+            <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/jordan.jpg" alt="Jordan">
+      </div>
+    </div>
+    <div class="mini_container">
+
+      <div class="leftside">
+        <img src="images/qatar.jpg" alt="Qatar">
+      </div>
+      <div class="rightside">
+        <h1 class="main">Qatar</h1>
+        <div class="main2">Qatar, a contemporary gem in the Arabian Gulf, features striking landmarks such as Doha's sleek skyline, the Museum of Islamic Art, and vibrant traditional souqs. Indulge in luxury shopping, enjoy cultural festivals, and embark on thrilling desert safaris. Combining tradition with cutting-edge innovation, Qatar offers a dynamic travel experience marked by modern attractions and authentic Arabian hospitality.
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+    </div>
+    <div class="colrev mini_container">
+
+      <div class="leftside">
+        <h1 class="main">Morocco</h1>
+        <div class="main2">Morocco, a vibrant mosaic of colors and cultures, beckons with iconic attractions such as the lively souks of Marrakech, the historic city of Fez, and the picturesque blue streets of Chefchaouen. Explore the majestic dunes of the Sahara Desert, savor delicious Moroccan cuisine, and uncover the beauty of historic kasbahs and palaces. Combining rich traditions with stunning landscapes, Morocco guarantees an unforgettable adventure filled with exotic charm and warm hospitality.
+        </div>
+        <button onclick="window.location.href='contact.html'">Enquire Now</button>
+      </div>
+      <div class="rightside">
+        <img src="images/morocco.jpg" alt="Morocco">
+      </div>
+    </div>
+    <div class="mini_container">
+
+        <div class="leftside">
+          <img src="images/saudi.jpg" alt="Saudi Arabia">
+        </div>
+        <div class="rightside">
+          <h1 class="main">Saudi Arabia</h1>
+          <div class="main2">Saudi Arabia, a blend of ancient heritage and contemporary progress, features landmark attractions such as Riyadh's Kingdom Centre, the UNESCO World Heritage site of Al-Hijr (Madain Salih), and the scenic Jeddah Corniche. Immerse yourself in traditional Bedouin culture, explore significant archaeological sites, and visit the sacred cities of Mecca and Medina. With its deep cultural roots and rapid modernization, Saudi Arabia offers a unique travel experience rich in contrasts and spiritual depth.
+          </div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+      </div>
+      <div class="colrev mini_container">
+
+        <div class="leftside">
+          <h1 class="main">Bahrain</h1>
+          <div class="main2">Bahrain, an island nation known for its rich cultural heritage and modern allure, features notable landmarks such as Manama's Bahrain Fort, the Al Fateh Grand Mosque, and the historic Qal'at al-Bahrain. Discover the vibrant souqs, unwind on pristine beaches, and enjoy flavorful Arabian cuisine. Combining ancient history with contemporary charm, Bahrain offers an engaging travel experience filled with cultural richness and warm hospitality.</div>
+          <button onclick="window.location.href='contact.html'">Enquire Now</button>
+        </div>
+        <div class="rightside">
+          <img src="images/bahrain.jpg" alt="Bahrain">
+        </div>
+      </div>
+   
+      
+    </div>
+  </body>
+  <footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 square">
+              <div class="brand">Company</div>
+              <p class="about">We believe travel is more than just visiting new places; it's about creating unforgettable experiences, discovering new cultures, and making lifelong memories. Founded in 2024 , we have grown from a passionate team of travel enthusiasts into a leading tour and travel company dedicated to bringing the world closer to you.
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 square">
+              <div class="heading">Site Map</div>
+              <ul class="l-list">
+                <a href="index.html"><li>Home</li></a> 
+                  <a href="about.html"><li>About</li></a> 
+                  <a href="Maharashtra.html"><li>Services</li></a>
+                    <a href="contact.html" class="heading-link">
+                   <li>Contact</li>
+                  </a>
+                </ul>
+              </div>
+          <div class="col-lg-4 col-md-6 square">
+              <div class="heading">Contact</div>
+              <ul class="contact">
+                <li><i class="fa-solid fa-house"></i>  Room No. 304, 3rd floor plot 882/883, Shree Munjoba CHS Princess Street, Dawa Bazar, 400002, Kalbadevi Rd, opposite Bank of India, Marine Lines East, Mumbai, Maharashtra 400002</li>
+                <li><i class="fa-solid fa-envelope"></i> Email@gmail.com</li>
+                <li><i class="fa-solid fa-envelope"></i> +4545 4544545</li>
+              </ul>
+          </div>
+      </div>
+      <ul class="social-media">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+      </ul>
+  </div>
+  <div class="copy">This website is created and maintained by the Central Training & Placement Committee of the Tasgaonkar Group of Institutions <br>
+    &copy Copyright &amp; Reserved 2023. <a href="#">Explore2Go</a></div>
+</footer>
+<script src="script.js"></script>
+</html>
